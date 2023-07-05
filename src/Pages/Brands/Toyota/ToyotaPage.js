@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../BrandPages.css";
 import ToyotaCategory from "./Data";
+import toyotahead from "../../../Images/TOYOTAL/Toyota head.png"
 
 const ToyotaPage = () => {
   const [activeToyotaTab, setActiveToyotaTab] = useState(0);
@@ -18,7 +19,7 @@ const ToyotaPage = () => {
     <main className="main-container">
       <section className="Fixed-Hero-Container">
         <div className="Fixed-Hero-Image">
-          <img src="./images/TOYOTAL/Toyota head.png" alt="Toyota Head" />
+          <img src={toyotahead} />
         </div>
       </section>
       <section className="Showroom-Section">
@@ -77,7 +78,7 @@ const ToyotaPage = () => {
           })}
         </article>
         {/* Image Category Slide */}
-        
+
         <article className="Image-Cat-Cont">
           {ToyotaCategory.map((imageList, imageListIndex) => {
             const { catImage } = imageList;

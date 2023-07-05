@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../BrandPages.css";
 import LexusCategory from "./Data";
+import lexthead from "../../../Images/LEXUS/Lexus head.png"
 
 const LexusPage = () => {
   const [activeLexusTab, setActiveLexusTab] = useState(0);
@@ -18,7 +19,7 @@ const LexusPage = () => {
     <main className="main-container">
       <section className="Fixed-Hero-Container">
         <div className="Fixed-Hero-Image">
-          <img src="./images/LEXUS/Lexus head.png" alt="lexus Head" />
+          <img src={lexthead} />
         </div>
       </section>
       <section className="Showroom-Section">
@@ -75,7 +76,7 @@ const LexusPage = () => {
             );
           })}
         </article>
-        
+
         {/* Image Category Slide */}
         <article className="Image-Cat-Cont">
           {LexusCategory.map((imageList, imageListIndex) => {

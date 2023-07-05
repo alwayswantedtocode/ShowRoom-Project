@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../BrandPages.css";
 import MercedesCategory from "./Data";
+import mercedeshead from "../../../Images/BENZ/Mercedes head.png"
 
 const MercedesPage = () => {
   const [activeMercedesTab, setActiveMercedesTab] = useState(0);
@@ -19,7 +20,7 @@ const MercedesPage = () => {
     <main className="main-container">
       <section className="Fixed-Hero-Container">
         <div className="Fixed-Hero-Image">
-          <img src="./images/BENZ/Mercedes head.png" alt="Mercedes Head" />
+          <img src={mercedeshead} alt="Mercedes Head" />
         </div>
       </section>
       <section className="Showroom-Section">
@@ -78,7 +79,7 @@ const MercedesPage = () => {
           })}
         </article>
         {/* Image Category Slide */}
-        
+
         <article className="Image-Cat-Cont">
           {MercedesCategory.map((imageList, imageListIndex) => {
             const { catImage } = imageList;

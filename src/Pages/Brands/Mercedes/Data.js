@@ -8,7 +8,7 @@ import EQB1 from "../../../Images/BENZ/EQB-SUV/2022-EQB-SUV-1.jpg";
 import AClass from "../../../Images/BENZ/A-Class-Sedan/A-class-Sedan-white.png";
 import EClass from "../../../Images/BENZ/E-Class-Sedan/iris-white (3).png";
 import SClass from "../../../Images/BENZ/S-Class-Sedan/iris.png";
-import AClass1 from "../../../Images/BENZ/A-Class-Sedan/A-class-Sedan-white.png";
+import AClass1 from "../../../Images/BENZ/A-Class-Sedan/2022-A-SEDAN-1.jpg";
 import EClass1 from "../../../Images/BENZ/E-Class-Sedan/2022-E-SEDAN-5.jpg";
 import SClass1 from "../../../Images/BENZ/S-Class-Sedan/2022-S-SEDAN-GAL-004-L-FE-DR.jpg";
 import EQS1 from "../../../Images/BENZ/EQS-SEDAN/iris (2).png"
@@ -35,14 +35,14 @@ const MercedesCategory = [
         ArrowIcon: <BiCaretRight />,
       },
       {
-        Image: "./images/BENZ/Mercedes-Maybach/Maybach-grey.png",
-        Name: Maybach,
+        Image: Maybach,
+        Name: "Maybach",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
       },
       {
-        Image: "./images/BENZ/EQB-SUV/EQB-SUV-WHITE (2).png",
-        Name: EQB,
+        Image: EQB,
+        Name: "EQB",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
       },
