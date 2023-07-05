@@ -10,6 +10,7 @@ const VideoSlide = ({ videoref }) => {
 
   const slideRef = useRef();
   const heightRef = useRef();
+  
 
   let slidewidth = slideRef.current?.clientWidth;
   let slidecoverHeight = heightRef.current?.clientHeight;
@@ -20,6 +21,9 @@ const VideoSlide = ({ videoref }) => {
     }, 5000);
     return () => clearInterval(slideInterval);
   }, [index, videoslide]);
+
+  
+   
 
   const nextHandle = () => {
     const indexSlide = index < videoslide.length - 1 ? index + 1 : 0;
@@ -35,6 +39,7 @@ const VideoSlide = ({ videoref }) => {
         className="SlideContainer"
         style={{ transform: "translateX(-" + slidewidth * index + "px" }}
         ref={slideRef}
+        
       >
         {videoslide.map((clips, clipIndex) => {
           const { video, id } = clips;
