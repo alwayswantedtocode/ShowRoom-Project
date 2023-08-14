@@ -23,6 +23,9 @@ const ElectricMercedes = () => {
     const imageSlide = index < data.length - 1 ? index + 1 : data.length - 1;
     setIndex(imageSlide);
   };
+  const handleSlideCounter = (index) => {
+    setIndex(index);
+  };
 
   return (
     // Go green image slider
@@ -39,6 +42,7 @@ const ElectricMercedes = () => {
                   "translateX(-" + electricMercedesSlide * index + "px",
               }}
               ref={mercedesSlideRef}
+              //touch slide
             >
               <img
                 src={image}
@@ -62,7 +66,7 @@ const ElectricMercedes = () => {
       </div>
 
       {/* Go green details slider */}
-      
+
       <div className="M-Green-details-container">
         {data.map((detail, Index) => {
           const { id, heading, desc } = detail;
@@ -74,6 +78,7 @@ const ElectricMercedes = () => {
                 transform: "translateX(-" + mercedesDetailSlide * index + "px",
               }}
               ref={mercedesDetailsRef}
+              //touch slide
             >
               <div
                 className={`M-Green-details ${Index === index ? "active" : ""}`}
@@ -96,6 +101,7 @@ const ElectricMercedes = () => {
             <div
               className={`M-green-count ${Index === index ? "active" : ""}`}
               key={id}
+              onClick={() => handleSlideCounter(Index)}
             ></div>
           );
         })}

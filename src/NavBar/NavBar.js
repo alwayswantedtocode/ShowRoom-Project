@@ -4,6 +4,7 @@ import Logo from "../NavBar/Logo";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { useGlobalContext } from "../GlobalContext";
 import SubMenu from "./SubMenu";
+import "./Navbar.css";
 
 const NavBar = () => {
   const { openMobileMenu, openSubMenu, closeSubMenu, isSubMenuOpen } =
@@ -64,7 +65,7 @@ const NavBar = () => {
             <FaBars />
           </button>
           <div className="navLinkContainer">
-            <NavLink className="navLink mouseover" onMouseOver={displaySubMenu}>
+            <NavLink className="navLink mouseover" onClick={displaySubMenu}>
               Brands
             </NavLink>
             <NavLink className="navLink mouseover" to="/Dealers">

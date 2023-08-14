@@ -34,7 +34,7 @@ const LexusPage = () => {
               <button
                 className={`Nav-Tab ${
                   activeLexusTab === index ? "active-tab" : ""
-                }`}
+                }`} 
                 key={id}
                 onClick={() => handleTabClick(index)}
               >

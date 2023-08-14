@@ -4,6 +4,7 @@ import { useGlobalContext } from "../GlobalContext";
 import { FaTimes } from "react-icons/fa";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import SubMenuLinks from "./NavbarData";
+import "./Navbar.css";
 
 const SlideMenu = () => {
   const {
@@ -39,7 +40,6 @@ const SlideMenu = () => {
         </nav>
 
         <section className="mobile-nav">
-         
           <div className="Mobile-navlink">
             <NavLink className="navLink" onClick={() => setShowInfo(!showInfo)}>
               Brands
@@ -52,51 +52,55 @@ const SlideMenu = () => {
             </button>
           </div>
           {/* Mobileview Submenu */}
-          {showInfo && (
-            <aside className="mobile-submenu" ref={mobileSubmenuref}>
-              {SubMenuLinks.map((brand, index) => {
-                const { Links } = brand;
-                return (
-                  <div key={index}>
-                    {Links &&
-                      Links.map((link, index, path) => {
-                        const { subLinks } = link;
-                        return (
-                          <div className="mobile-submenu-brands" key={index}>
-                            <NavLink
-                              key={link.path}
-                              to={link.path}
-                              onClick={clickLink}
-                            >
-                              <h3>{link.names}</h3>
-                            </NavLink>
-                            <div className="submenu-brand-images-wrapper">
-                              {subLinks &&
-                                subLinks.map((details, index) => {
-                                  return (
-                                    <NavLink
-                                      className="submenu-brand-images"
-                                      key={index}
-                                      onClick={clickLink}
-                                    >
-                                      <img
-                                        src={details.image}
-                                        alt={details.Description}
-                                        className="submenu-image"
-                                      />
-                                      <p>{details.Description}</p>
-                                    </NavLink>
-                                  );
-                                })}
-                            </div>
+          {/* {showInfo && ( */}
+          <aside
+            className={`mobile-submenu ${showInfo ? "active" : ""}`}
+            ref={mobileSubmenuref}
+          >
+            {SubMenuLinks.map((brand, index) => {
+              const { Links } = brand;
+              return (
+                <div key={index}>
+                  {Links &&
+                    Links.map((link, index, path) => {
+                      const { subLinks } = link;
+                      return (
+                        <div className="mobile-submenu-brands" key={index}>
+                          <NavLink
+                            key={link.path}
+                            to={link.path}
+                            onClick={clickLink}
+                          >
+                            <h3>{link.names}</h3>
+                          </NavLink>
+                          <div className="submenu-brand-images-wrapper">
+                            {subLinks &&
+                              subLinks.map((details, index) => {
+                                return (
+                                  <NavLink
+                                    className="submenu-brand-images"
+                                    key={index}
+                                    onClick={clickLink}
+                                    to={details.url}
+                                  >
+                                    <img
+                                      src={details.image}
+                                      alt={details.Description}
+                                      className="submenu-image"
+                                    />
+                                    <p>{details.Description}</p>
+                                  </NavLink>
+                                );
+                              })}
                           </div>
-                        );
-                      })}
-                  </div>
-                );
-              })}
-            </aside>
-          )}
+                        </div>
+                      );
+                    })}
+                </div>
+              );
+            })}
+          </aside>
+          {/* )} */}
 
           <div className="Mobile-navlink">
             <NavLink className="navLink" to="/Dealers" onClick={clickLink}>

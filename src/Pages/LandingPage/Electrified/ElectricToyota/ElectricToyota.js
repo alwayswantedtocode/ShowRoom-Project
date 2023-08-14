@@ -23,10 +23,13 @@ const ElectricToyota = () => {
     const imageSlide = index < data.length - 1 ? index + 1 : data.length - 1;
     setIndex(imageSlide);
   };
+  const handleSlideCounter = (index) => {
+    setIndex(index);
+  };
 
   return (
     // Go green image slider
-    
+
     <div className="T-Green-container">
       <div className="T-Green-slide-container">
         {data.map((toyota, Index) => {
@@ -94,6 +97,7 @@ const ElectricToyota = () => {
             <div
               className={`T-green-count ${Index === index ? "active" : ""}`}
               key={id}
+              onClick={() => handleSlideCounter(Index)}
             ></div>
           );
         })}

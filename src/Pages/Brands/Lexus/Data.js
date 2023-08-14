@@ -1,7 +1,7 @@
 import { BiCaretRight } from "react-icons/bi";
 import RxHybrid from "../../../Images/LEXUS/RX-350-HYBRID/large-1.png";
-import GX from "../../../Images/LEXUS/GX/large-1-removebg-preview.png";
-import LX from "../../../Images/LEXUS/LX600/large-1-removebg-preview.png";
+import GX from "../../../Images/LEXUS/GX/GX-WHITE-1.png";
+import LX from "../../../Images/LEXUS/LX600/LX-WHITE-1-1.png";
 import RxHybrid1 from "../../../Images/LEXUS/RX-350-HYBRID/lexus-2023-overview-hero-rx500h.jpg";
 import GX1 from "../../../Images/LEXUS/GX/lexus-2023-gx-460-front-angle-atomic-silver-l.jpg";
 import LX1 from "../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-5-desktop-1440x811-LEX-LXG-MY22-0007.png";

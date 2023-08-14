@@ -1,13 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import data from "../newVehicles/vehiclesData";
 import { BiCaretLeft, BiCaretRight } from "react-icons/bi";
 
 const VehiclesSlide = () => {
-  const [vehicleslide, setVehicleslide] = useState(data);
-
-  const [slidecounter, setSlidecounter] = useState(data);
-
+  const [vehicleslide] = useState(data);
   const [index, setIndex] = useState(0);
 
   const vechicleRef = useRef();
@@ -24,6 +21,9 @@ const VehiclesSlide = () => {
     const indexSlide = index > 0 ? index - 1 : 0;
     setIndex(indexSlide);
   };
+  const handleSlideCounter = (index) => {
+    setIndex(index);
+  };
   return (
     <section className="second-Section">
       <h2 className="new-vehicle-heading">New Vehicle</h2>
@@ -33,9 +33,32 @@ const VehiclesSlide = () => {
         style={{
           transform: "translateX(-" + vehicleSlidewidth * index + "px",
         }}
+        onTouchStart={(e) => {
+          const touch = e.touches[0];
+          let xStart = touch.clientX;
+          let yStart = touch.clientY;
+
+          e.target.addEventListener("touchmove", (e) => {
+            const touchMove = e.touches[0];
+            let xDiff = touchMove.clientX - xStart;
+            let yDiff = touchMove.clientY - yStart;
+
+            if (Math.abs(xDiff) > Math.abs(yDiff)) {
+              if (xDiff > 0) {
+                prevBtn();
+              } else {
+                nextBtn();
+              }
+            }
+          });
+
+          e.target.addEventListener("touchend", () => {
+            e.target.removeEventListener("touchmove", null);
+          });
+        }}
       >
         {vehicleslide.map((carslides, carIndex) => {
-          const { id, image, Brand, Type, Year, feature, amount, button } =
+          const { id, image, Brand, Type, Year, link, amount, button } =
             carslides;
 
           //create active slide
@@ -47,9 +70,9 @@ const VehiclesSlide = () => {
               ref={vechicleRef}
             >
               <div className="vehicleImage">
-                <Link to="/">
+                <NavLink to={link} key={link}>
                   <img src={image} alt={Brand} />
-                </Link>
+                </NavLink>
               </div>
               <div className="new-vehicle-details">
                 <div className="year-type-cover">
@@ -80,8 +103,11 @@ const VehiclesSlide = () => {
                   <div className="amount-explore-cover">
                     <div className="amount">${amount}</div>
                     <h5 className="line-two">|</h5>
-                    {/* <div> */}
-                    <button className="explore-btn">explore</button>
+                    <NavLink>
+                      {" "}
+                      <button className="explore-btn">explore</button>
+                    </NavLink>
+
                     {/* </div> */}
                   </div>
                 </div>
@@ -95,16 +121,9 @@ const VehiclesSlide = () => {
           <BiCaretLeft />
         </div>
         <div className="counter">
-         
-          {slidecounter.map((counter, countIndex) => {
+          {vehicleslide.map((counter, countIndex) => {
             const { id } = counter;
-// const counterBtn=()=>{
-//               const countSlider = index === countIndex? countIndex;
-//               setIndex(countSlider);
-//             }
-            
-            //create active count indicator
-            
+
             return (
               <div
                 className={`slide-counter ${
@@ -112,6 +131,7 @@ const VehiclesSlide = () => {
                 }`}
                 key={id}
                 ref={colorRef}
+                onClick={() => handleSlideCounter(countIndex)}
               ></div>
             );
           })}

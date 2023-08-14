@@ -84,43 +84,43 @@ const SubMenuLinks = [
           {
             Description: "LEXUS ES",
             image: ES,
-            URL: "/",
+            url: "Lexuspage/ES",
           },
           {
             Description: "LEXUS LS",
             image: LS,
-            URL: "/",
+            url: "Lexuspage/LS",
           },
 
           {
             Description: "LEXUS IS",
             image: IS,
-            URL: "/",
+            url: "/",
           },
           {
             Description: "LEXUS LS-HYBRID",
             image: LSHybrid,
-            URL: "/",
+            url: "Lexuspage/LS-Hybrid",
           },
           {
             Description: "LEXUS GX",
             image: GX,
-            URL: "/",
+            url: "Lexuspage/GX",
           },
           {
             Description: "LEXUS LX",
             image: LX,
-            URL: "/",
+            url: "Lexuspage/LX",
           },
           {
             Description: "LEXUS RX-HYBRID",
             image: RX,
-            URL: "/",
+            url: "/",
           },
           {
             Description: "LEXUS UX-HYBRID",
             image: UX,
-            URL: "/",
+            url: "/",
           },
         ],
       },

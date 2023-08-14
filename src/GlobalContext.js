@@ -6,6 +6,8 @@ const GlobalContext = React.createContext();
 export const AppProvider = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  const [showMore, setShowMore] = useState(false);
+  const [showMore1, setShowMore1] = useState(false);
 
   const [location, setLocation] = useState({});
 
@@ -44,6 +46,10 @@ export const AppProvider = ({ children }) => {
         isSubMenuOpen,
         location,
         page,
+        showMore,
+        setShowMore,
+        showMore1,
+        setShowMore1,
       }}
     >
       {children}

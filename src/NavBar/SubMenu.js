@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useGlobalContext } from "../GlobalContext";
 import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 const SubMenu = () => {
   const {
@@ -70,11 +71,12 @@ const SubMenu = () => {
             {/* <div className={`brandNav${column}`}> */}
             <div className="brand-image-container">
               {Link.subLinks.map((subLink, secondIndex) => {
-                const { image, Description, URL } = subLink;
+                const { image, Description, url } = subLink;
                 return (
                   <NavLink
                     className="brand-image"
                     key={secondIndex}
+                    to={url}
                     onClick={clickLink}
                   >
                     <img src={image} alt={Description} className="image" />

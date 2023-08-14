@@ -15,23 +15,29 @@ import Toyota from "../Pages/Brands/Toyota/ToyotaPage";
 import Dealers from "../Pages/Dealers/Dealers";
 import Supports from "../Pages/Supports/Support";
 import LandingPage from "../Pages/LandingPage/LandingPage";
-import Footer from "../Footer/Footer";
+import GXMain from "../Pages/Brands/Lexus/GX/GXMain";
+import LXMain from "../Pages/Brands/Lexus/LX/LxMain";
+import ESMain from "../Pages/Brands/Lexus/ES/ESMain"
+import LSMain from "../Pages/Brands/Lexus/LS/LSMain";
+import LSHYBRID from "../Pages/Brands/Lexus/LS Hybrid/LSHMain"
 import React from "react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<SharedLayout />}>
       <Route index element={<LandingPage />} />
-      {/* <Route path="Brands" element={<Brands />}> */}
+
       <Route path="Mercedespage" element={<Mercedes />} />
       <Route path="Lexuspage" element={<Lexus />} />
       <Route path="Toyotapage" element={<Toyota />} />
-      {/* </Route> */}
+
       <Route path="Dealers" element={<Dealers />} />
       <Route path="Support" element={<Supports />} />
-      {/* <Route path="Mercedespage" element={<Mercedes />} />
-      <Route path="Lexuspage" element={<Lexus />} />
-      <Route path="Toyotapage" element={<Toyota />} /> */}
+      <Route path="Lexuspage/GX" element={<GXMain />} />
+      <Route path="Lexuspage/LX" element={<LXMain />} />
+      <Route path="Lexuspage/ES" element={<ESMain />} />
+      <Route path="Lexuspage/LS" element={<LSMain />} />
+      <Route path="Lexuspage/LS-Hybrid" element={<LSHYBRID />} />
     </Route>
   )
 );

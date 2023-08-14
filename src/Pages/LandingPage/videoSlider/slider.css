@@ -162,8 +162,8 @@ button Styles
   color: #fff;
 }
 .description {
-  width: fit-content;
-  height: fit-content;
+  width: max-content;
+  height: max-content;
   position: absolute;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
@@ -184,7 +184,7 @@ button Styles
 }
 .maybach-Description {
   width: 15rem;
-  height: fit-content;
+  height: max-content;
 
   position: absolute;
   text-align: center;
@@ -269,8 +269,8 @@ button Styles
     color: var(--clr-white);
   }
   .maybach-Description {
-    width: fit-content;
-    height: fit-content;
+    width: max-content;
+    height: max-content;
     padding: 0.5rem;
     position: absolute;
     text-align: center;
@@ -361,8 +361,8 @@ button Styles
     color: var(--clr-white);
   }
   .maybach-Description {
-    width: fit-content;
-    height: fit-content;
+    width: max-content;
+    height: max-content;
     padding: 0.5rem;
     position: absolute;
     text-align: center;
@@ -448,8 +448,8 @@ button Styles
     color: var(--clr-white);
   }
   .maybach-Description {
-    width: fit-content;
-    height: fit-content;
+    width: max-content;
+    height: max-content;
     padding: 0.5rem;
     position: absolute;
     text-align: center;

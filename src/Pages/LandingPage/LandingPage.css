@@ -150,20 +150,14 @@ Video Slide Section
   position: relative;
   width: 100%;
   transition: 0.5s ease-in-out;
+  border: 2px solid brown;
 }
 
 .slide {
   width: 100%;
-
   position: absolute;
 }
-/* .slide-btn-container {
-  display: none;
-  justify-content: center;
-  position: relative;
-  top: 43%;
-  height: 4rem;
-} */
+
 .left-btn,
 .right-btn {
   visibility: hidden;
@@ -271,12 +265,10 @@ Video Slide Section
   padding: 0 0.5rem;
   gap: 10px;
   transition: 0.5s ease-in-out;
-  
 }
 .vehicle-slide {
   width: 16.5625rem;
   margin: 0 0.5rem 0 0.5rem;
-  
 }
 .vehicleImage {
   width: 16.5625rem;
@@ -314,11 +306,11 @@ Video Slide Section
   font-size: 1rem;
 }
 .year-type-cover > .year {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0 1rem 0 0;
 }
 .year-type-cover > .type {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0 0 0 1rem;
 }
 .brand-features-amount-cover {
@@ -330,7 +322,7 @@ Video Slide Section
   color: var(--clr-black);
 }
 .brand-features-amount-cover h4 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .brand-features-amount-cover > .features {
@@ -358,7 +350,7 @@ Video Slide Section
   font-size: 1.2rem;
   text-align: center;
 }
-.amount-explore-cover > .explore-btn {
+.explore-btn {
   width: 7rem;
   height: 2.5rem;
   font-size: 1.2rem;
@@ -412,11 +404,9 @@ Video Slide Section
     width: 28.5625rem;
     height: 15.5625rem;
   }
-  img {
+  .vehicleImage img {
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
-    width: 100%;
-    height: 100%;
   }
   .new-vehicle-details {
     display: flex;
@@ -425,7 +415,7 @@ Video Slide Section
     align-items: center;
     background: rgba(0, 0, 0, 0.27);
     width: 28.5625rem;
-    height: 20.375rem;
+    /* height: 20.375rem; */
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   }
@@ -437,7 +427,7 @@ Video Slide Section
     margin: 0 0.5rem 0 0.5rem;
   }
   .vehicleImage {
-    height: 20.4125rem;
+    height: 23.4125rem;
     width: 30.5625rem;
     background-position: center;
     background-size: cover;
@@ -446,13 +436,11 @@ Video Slide Section
     border-top-right-radius: 0rem;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
-    width: 100%;
-    height: 100%;
   }
   .new-vehicle-details {
     background: rgba(0, 0, 0, 0.27);
     width: 17.375rem;
-    height: 20.4125rem;
+    height: 23.4125rem;
     border-bottom-left-radius: 0rem;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -464,9 +452,6 @@ Video Slide Section
 
   .brand-features-amount-cover > .features > h4 {
     margin-bottom: 0.2rem;
-  }
-  .brand-features-amount-cover > .features > p {
-    font-size: 0.85rem;
   }
   .amount-explore-cover {
     display: flex;

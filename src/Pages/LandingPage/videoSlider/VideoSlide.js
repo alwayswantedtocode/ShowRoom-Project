@@ -1,16 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import Data from "../LandingPagedata";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import "./slider.css";
 
 const VideoSlide = ({ videoref }) => {
   const [videoslide, setVideoslide] = useState(Data);
   const [index, setIndex] = useState(0);
-  
+
   // const [childHeight, setChildHeight] = useState(0);
 
   const slideRef = useRef();
   const heightRef = useRef();
-  
 
   let slidewidth = slideRef.current?.clientWidth;
   let slidecoverHeight = heightRef.current?.clientHeight;
@@ -21,9 +21,6 @@ const VideoSlide = ({ videoref }) => {
     }, 5000);
     return () => clearInterval(slideInterval);
   }, [index, videoslide]);
-
-  
-   
 
   const nextHandle = () => {
     const indexSlide = index < videoslide.length - 1 ? index + 1 : 0;
@@ -39,7 +36,6 @@ const VideoSlide = ({ videoref }) => {
         className="SlideContainer"
         style={{ transform: "translateX(-" + slidewidth * index + "px" }}
         ref={slideRef}
-        
       >
         {videoslide.map((clips, clipIndex) => {
           const { video, id } = clips;
@@ -55,6 +51,29 @@ const VideoSlide = ({ videoref }) => {
               className={`${slide} ${position}`}
               style={{ left: clipIndex * 100 + "%" }}
               ref={heightRef}
+              onTouchStart={(e) => {
+                const touch = e.touches[0];
+                let xStart = touch.clientX;
+                let yStart = touch.clientY;
+
+                e.target.addEventListener("touchmove", (e) => {
+                  const touchMove = e.touches[0];
+                  let xDiff = touchMove.clientX - xStart;
+                  let yDiff = touchMove.clientY - yStart;
+
+                  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+                    if (xDiff > 0) {
+                      prevHandle();
+                    } else {
+                      nextHandle();
+                    }
+                  }
+                });
+
+                e.target.addEventListener("touchend", () => {
+                  e.target.removeEventListener("touchmove", null);
+                });
+              }}
             >
               <div className="vid-slide">{video}</div>
             </div>

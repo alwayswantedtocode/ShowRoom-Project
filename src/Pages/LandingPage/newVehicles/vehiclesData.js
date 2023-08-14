@@ -15,6 +15,7 @@ const vehicledata = [
     feature: "lorem",
     amount: "25,999",
     button: "explore",
+    link: "Lexuspage/GX",
   },
   {
     id: 2,
