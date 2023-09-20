@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import LxLexus from "../../../Images/LEXUS/LX600/Lx-Video-Edit-2-use.mp4";
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
-
+import { NavLink } from "react-router-dom";
 // e
 
 const SixthSlide = () => {
@@ -35,7 +35,9 @@ const SixthSlide = () => {
         <p className="chasephrase">Luxury re-imagined on wheels</p>
       </div>
       <div className="more-info-container">
-        <div className="more-info">Learn More</div>
+        <div className="more-info">
+          <NavLink to="Lexus/SUV/LX">Learn More</NavLink>
+        </div>
         <div className="nav-arrow">
           <BiChevronRight />
         </div>

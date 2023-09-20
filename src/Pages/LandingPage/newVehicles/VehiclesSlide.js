@@ -26,7 +26,7 @@ const VehiclesSlide = () => {
   };
   return (
     <section className="second-Section">
-      <h2 className="new-vehicle-heading">New Vehicle</h2>
+      <h2 className="new-vehicle-heading">New Vehicles</h2>
 
       <div
         className="new-vechicle-slide-container"
@@ -103,7 +103,7 @@ const VehiclesSlide = () => {
                   <div className="amount-explore-cover">
                     <div className="amount">${amount}</div>
                     <h5 className="line-two">|</h5>
-                    <NavLink>
+                    <NavLink to={link}>
                       {" "}
                       <button className="explore-btn">explore</button>
                     </NavLink>

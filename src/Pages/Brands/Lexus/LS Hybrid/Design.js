@@ -46,7 +46,7 @@ const Design = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [slidecoverHeight, design]);
+  }, [slidecoverHeight, design, ]);
 
   const handleTabClick = (index) => {
     setIsvisible(index);
@@ -110,7 +110,7 @@ const Design = () => {
         </div>
       </div>
       <div className="Click-showmore" onClick={() => setShowMore1(!showMore1)}>
-        MORE GX PERFORMANCE FEATURES
+        MORE
         <button className="Click-showmore-btn">
           {showMore1 ? <FaChevronUp /> : <FaChevronDown />}
         </button>

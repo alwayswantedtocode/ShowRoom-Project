@@ -67,7 +67,7 @@ const Performance = () => {
         </div>
       </div>
       <div className="Click-showmore" onClick={() => setShowMore(!showMore)}>
-        MORE GX PERFORMANCE FEATURES
+        MORE 
         <button className="Click-showmore-btn">
           {showMore ? <FaChevronUp /> : <FaChevronDown />}
         </button>

@@ -1,3 +1,4 @@
+
 import { Outlet } from "react-router-dom";
 import Navbar from "../NavBar/NavBar";
 import SlideMenu from "../NavBar/SlideMenu";
@@ -9,7 +10,7 @@ const Home = () => {
       <Navbar />
       <SlideMenu />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

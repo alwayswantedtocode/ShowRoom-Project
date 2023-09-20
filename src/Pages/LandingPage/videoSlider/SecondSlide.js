@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-
+import { NavLink } from "react-router-dom";
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
 import AClassSedan from "../../../Images/BENZ/A-Class-Sedan/A-Class-SEDAN-Video-use.mp4";
 
@@ -35,7 +35,9 @@ const SecondSlide = () => {
         <p className="chasephrase">Go above and beyond the ordinary.</p>
       </div>
       <div className="more-info-container">
-        <div className="more-info">Learn More</div>
+        <div className="more-info">
+          <NavLink to="Toyota/SUV/Highlander">Learn More</NavLink>
+        </div>
         <div className="nav-arrow">
           <BiChevronRight />
         </div>

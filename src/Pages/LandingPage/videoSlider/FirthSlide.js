@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import ToyotaCrown from "../../../Images/TOYOTAL/crown/Toyota-crown-use.mp4";
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
-
+import { NavLink } from "react-router-dom";
 // j
 
 const FirthSlide = () => {
@@ -34,7 +34,10 @@ const FirthSlide = () => {
         <p className="chasephrase">Innovation dialed up.</p>
       </div>
       <div className="more-info-container">
-        <div className="more-info">Learn More</div>
+        <div className="more-info">
+          {" "}
+          <NavLink to="Toyota/Sedan/Crown">Learn More</NavLink>
+        </div>
         <div className="nav-arrow">
           <BiChevronRight />
         </div>

@@ -15,8 +15,9 @@ const NavBar = () => {
   const [visible, setVisible] = useState(true);
 
   const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
+    const currentScrollPos = window.scrollY;
     const visibleNav = currentScrollPos < prevScrollPos;
+   
 
     setPrevScrollPos(currentScrollPos);
     setVisible(visibleNav);
@@ -27,6 +28,7 @@ const NavBar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+    
   }, [prevScrollPos, visible]);
 
   //Mouseover buttons
@@ -41,12 +43,7 @@ const NavBar = () => {
     // openSubMenu(brand);
     console.log(bottom);
   };
-  // const removeSubMenu = (e) => {
-  //   if (!e.target.classList.contains("mouseover")) {
-  //     // console.log(e.target);
-  //     closeSubMenu();
-  //   }
-  // };
+ 
 
   return (
     <header>

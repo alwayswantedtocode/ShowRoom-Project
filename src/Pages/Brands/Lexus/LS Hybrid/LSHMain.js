@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {
   exteriorheading,
   performanceheading,
@@ -15,6 +15,12 @@ import Gallery from "./Gallery";
 import "../Lexus.css";
 
 const Main = () => {
+
+   useEffect(() => {
+     // Scroll to the top of the page when the component is mounted
+     window.scrollTo(0, 0);
+   }, []);
+   
   return (
     <main className="Model-Main">
       {/* Hero */}

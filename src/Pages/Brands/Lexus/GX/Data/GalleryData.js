@@ -1,23 +1,23 @@
 // Import images from GX folder
 import firstImage from "../../../../../Images/LEXUS/GX/lexus-2023-gx-460-features-performance-towing-starfire-pearl-l.jpg";
-import secondImage from "../../../../../Images/LEXUS/GX/Lexus-GX-6-Gallery-1440x811-LEX-GXG-MY20-0074-01.webp";
+import secondImage from "../../../../../Images/LEXUS/GX/Lexus-GX-6-Gallery-1440x811-LEX-GXG-MY20-0074-01.png";
 import thirdImage from "../../../../../Images/LEXUS/GX/Lexus-GX-8-Gallery-1440x811-LEX-GXG-MY20-0049_M75.png";
 import fourthImage from "../../../../../Images/LEXUS/GX/Lexus-GX-14-Gallery-1440x811-LEX-GXG-MY20-0057_M75.png";
 import firthImage from "../../../../../Images/LEXUS/GX/lexus-2023-gx-460-front-right-nebula-grey-pearl-l.jpg";
-import sixthImage from "../../../../../Images/LEXUS/GX/lexus-2023-gx-460-features-performance-v8-engine-starfire-pearl-l.jpg";
+import sixthImage from "../../../../../Images/LEXUS/GX/lexus-2023-gx-460-front-angle-atomic-silver-l.jpg";
 import seventhImage from "../../../../../Images/LEXUS/GX/Lexus-GX-15-Gallery.png";
 // import eighthImage from "../Images/LEXUS/GX/";
 // import ninethImage from "../Images/LEXUS/GX/";
 
 // Import images from interior folder
 import tenthImage from "../../../../../Images/LEXUS/GX/INTERIOR/lexus-2023-gx-460-interior-rioja-red-display-l.jpg";
-import eleventhImage from "../../../../../Images/LEXUS/GX/INTERIOR/2022-lexus-gx460-110-1649060822.jpg";
-import twelvethImage from "../../../../../Images/LEXUS/GX/INTERIOR/2022-lexus-gx460-113-1649060827.jpg";
+import eleventhImage from "../../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-13-Gallery-1440x811-LEX-GXG-MY22-0070.jpg";
+import twelvethImage from "../../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-10-Gallery-1440x811-LEX-GXG-MY22-0054 (1).jpg";
 import thirteenImage from "../../../../../Images/LEXUS/GX/INTERIOR/2022-lexus-gx460-116-1649060827.jpg";
 import fourteenthImage from "../../../../../Images/LEXUS/GX/INTERIOR/lexus-2023-gx-460-interior-remote-touch-l.jpg";
 import fifteenthImage from "../../../../../Images/LEXUS/GX/INTERIOR/lexus-2023-gx-460-features-design-luxurious-accommodations-for-7-l.jpg";
 import sixteenthImage from "../../../../../Images/LEXUS/GX/INTERIOR/lexus-2023-gx-460-features-design-ample-cargo-space-l.jpg";
-// import seventeenthImage from "../Images/LEXUS/GX/interior/interior-image-2.jpg";
+import seventeenthImage from "../../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-4-Gallery-1440x811-LEX-GXG-MY23-0065.jpg";
 // import eighteenthImage from "../Images/LEXUS/GX/interior/interior-image-1.jpg";
 // Import other interior images here
 
@@ -39,6 +39,7 @@ const imagesData = [
   { id: 12, src: fourteenthImage, alt: "Image 12" },
   { id: 13, src: fifteenthImage, alt: "Image 13" },
   { id: 14, src: sixteenthImage, alt: "Image 14" },
+  { id: 15, src: seventeenthImage, alt: "Image 15" },
   // Add other interior images here
 ];
 

@@ -1,11 +1,11 @@
 // Import images from GX folder
-import firstImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-1-desktop-1440x811-LEX-LXG-MY23-0025.webp";
+import firstImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-1-desktop-1440x811-LEX-LXG-MY23-0025.jpg";
 import secondImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-12-desktop.png";
-import thirdImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-safety-header-1-lexus-safety-system-desktop-1440x800-LEX-LXG-MY22-0011.webp";
+import thirdImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-safety-header-1-lexus-safety-system-desktop-1440x800-LEX-LXG-MY22-0011.jpg";
 import fourthImage from "../../../../../Images/LEXUS/LX600/lexus-2023-lx-600-executive-vip-manganese-lustre-l.jpg";
-import firthImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-8-desktop-1440x811-LEX-LXG-MY22-0021.webp";
+import firthImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-8-desktop-1440x811-LEX-LXG-MY22-0021.png";
 import sixthImage from "../../../../../Images/LEXUS/LX600/lexus-2023-lx-600-executive-vip-atomic-silver-profile-l.jpg";
-import seventhImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-9-desktop-1440x811-LEX-LXG-MY22-0054.webp";
+import seventhImage from "../../../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-9-desktop-1440x811-LEX-LXG-MY22-0054.jpg";
 import eighthImage from "../../../../../Images/LEXUS/LX600/lexus-2023-lx-600-features-next-steps-luxury-l.jpg";
 // import ninethImage from "../Images/LEXUS/GX/";
 
@@ -15,7 +15,7 @@ import eleventhImage from "../../../../../Images/LEXUS/LX600/INTERIOR/Lexus-LX60
 import twelvethImage from "../../../../../Images/LEXUS/LX600/INTERIOR/Lexus-LX600-07.jpeg";
 import thirteenImage from "../../../../../Images/LEXUS/LX600/INTERIOR/Lexus-lx-gallery-thumbnail-2-desktop-1440x811-LEX-LXG-MY23-0032.jpg";
 import fourteenthImage from "../../../../../Images/LEXUS/LX600/INTERIOR/Lexus-lx-gallery-thumbnail-7-desktop-1440x811-LEX-LXG-MY22-0024.webp";
-import fifteenthImage from "../../../../../Images/LEXUS/LX600/INTERIOR/Lexus-lx-gallery-thumbnail-14-desktop-1440x811-LEX-LXG-MY22-0031.webp";
+import fifteenthImage from "../../../../../Images/LEXUS/LX600/INTERIOR/Lexus-lx-gallery-thumbnail-14-desktop-1440x811-LEX-LXG-MY22-0031.png";
 import sixteenthImage from "../../../../../Images/LEXUS/LX600/INTERIOR/lx-600-vip-comfort-reimagined-vip-seating.jpg";
  import seventeenthImage from "../../../../../Images/LEXUS/LX600/INTERIOR/lexus-2023-lx-600-executive-vip-interior-caramel-sunset-l.jpg";
 // import eighteenthImage from "../Images/LEXUS/GX/interior/interior-image-1.jpg";

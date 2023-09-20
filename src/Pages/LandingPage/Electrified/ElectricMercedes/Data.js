@@ -1,5 +1,5 @@
-import EQSFristInterior from "../../../../Images/BENZ/EQS-SUV/2023-EQS-SUV-Gallery_014-XL.jpg";
-import EQSSecondInterior from "../../../../Images/BENZ/EQS-SUV/2023-EQS-SUV-Gallery_013-XL.jpg";
+import EQSFristInterior from "../../../../Images/BENZ/EQS-SUV/Interior/2023-EQS-SUV-Gallery_014-XL.jpg";
+import EQSSecondInterior from "../../../../Images/BENZ/EQS-SUV/Interior/2023-EQS-SUV-Gallery_013-XL.jpg";
 import EQSThirdInterior from "../../../../Images/BENZ/EQS-SUV/2023-EQS-SUV-Gallery_026-XL.jpg";
 
 // show

@@ -30,7 +30,32 @@ const ElectricMercedes = () => {
   return (
     // Go green image slider
     <div className="M-Green-container">
-      <div className="M-Green-slide-container">
+      <div
+        className="M-Green-slide-container"
+        onTouchStart={(e) => {
+          const touch = e.touches[0];
+          let xStart = touch.clientX;
+          let yStart = touch.clientY;
+
+          e.target.addEventListener("touchmove", (e) => {
+            const touchMove = e.touches[0];
+            let xDiff = touchMove.clientX - xStart;
+            let yDiff = touchMove.clientY - yStart;
+
+            if (Math.abs(xDiff) > Math.abs(yDiff)) {
+              if (xDiff > 0) {
+                leftBtnhandle();
+              } else {
+                rightBtnhandle();
+              }
+            }
+          });
+
+          e.target.addEventListener("touchend", () => {
+            e.target.removeEventListener("touchmove", null);
+          });
+        }}
+      >
         {data.map((mercedes, Index) => {
           const { image, name, id } = mercedes;
           return (

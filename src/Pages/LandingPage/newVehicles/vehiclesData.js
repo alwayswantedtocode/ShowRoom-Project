@@ -1,6 +1,6 @@
 import LexusGx from "../../../Images/LEXUS/GX/Lexus-GX-3-Gallery.webp";
 import SClass from "../../../Images/BENZ/S-Class-Sedan/S-SEDAN-GAL-003-L-FE-DR.jpg";
-import ToyataCrown from "../../../Images/TOYOTAL/crown/Toyota-Crown-2.jpg";
+import ToyataCrown from "../../../Images/TOYOTAL/crown/Toyota-Crown.webp";
 import MayBach from "../../../Images/BENZ/Mercedes-Maybach/maybach-design-hero.jpg";
 
 // n
@@ -15,7 +15,7 @@ const vehicledata = [
     feature: "lorem",
     amount: "25,999",
     button: "explore",
-    link: "Lexuspage/GX",
+    link: "Lexus/SUV/GX",
   },
   {
     id: 2,
@@ -26,6 +26,7 @@ const vehicledata = [
     feature: "lorem",
     amount: "25,999",
     button: "explore",
+    link: "Mercedes/Sedan/S-Class",
   },
   {
     id: 3,
@@ -36,6 +37,7 @@ const vehicledata = [
     feature: "lorem",
     amount: "25,999",
     button: "explore",
+    link: "Toyota/Sedan/Crown",
   },
 
   {
@@ -47,6 +49,7 @@ const vehicledata = [
     feature: "lorem",
     amount: "25,999",
     button: "explore",
+    link: "Mercedes/SUV/MayBach",
   },
 ];
 

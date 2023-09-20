@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useGlobalContext } from "../GlobalContext";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
@@ -7,17 +7,10 @@ const SubMenu = () => {
   const {
     openSubMenu,
     closeSubMenu,
-    isSubMenuOpen,
-    page: { names, Links },
+    page: { Links },
   } = useGlobalContext();
 
   const dropdownRef = useRef();
-
-  // useEffect(() => {
-  //   const submenu = dropdownRef.current;
-  //   const { bottom } = location;
-  //   submenu.style.top = `${bottom}px`;
-  // }, [location]);
 
   // Click outside the Submenu to close
   const handleClickOutside = (event) => {
@@ -35,7 +28,7 @@ const SubMenu = () => {
 
   // Scroll greater than zero to close Submenu
   const handleScroll = () => {
-    if (openSubMenu && dropdownRef.current && window.pageYOffset > 0) {
+    if (openSubMenu && dropdownRef.current && window.scrollY > 0) {
       closeSubMenu();
     }
   };
@@ -46,10 +39,17 @@ const SubMenu = () => {
     };
   }, [openSubMenu, closeSubMenu]);
 
+  // Scroll to the top when the sub-menu is opened
+  // useEffect(() => {
+  //   if () {
+  //     window.scrollTo(0, 0);
+  //   }
+  // }, []);
+
   const clickLink = () => {
     closeSubMenu();
   };
-  // className = "subMenu";
+
   return (
     <div
       className="subMenu mouseover"
@@ -60,15 +60,8 @@ const SubMenu = () => {
         const { names, path } = Link;
         return (
           <div className="brandContainer mouseover" key={firstIndex}>
-            <NavLink
-              className="brand-name"
-              key={path}
-              to={path}
-              onClick={clickLink}
-            >
-              <h3>{names}</h3>
-            </NavLink>
-            {/* <div className={`brandNav${column}`}> */}
+            <h3>{names}</h3>
+
             <div className="brand-image-container">
               {Link.subLinks.map((subLink, secondIndex) => {
                 const { image, Description, url } = subLink;

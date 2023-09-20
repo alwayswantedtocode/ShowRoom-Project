@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import data from "./Footerdata";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const [info] = useState(data);
@@ -39,9 +39,9 @@ const Footer = () => {
               <div className="Footer-First-Circle"></div>
               <div className="Footer-Second-Circle"></div>
             </div>
-            <div className="Text">
+            <NavLink to="/"><div className="Text">
               <h5>ShowRoom</h5>
-            </div>
+            </div></NavLink>
           </div>
           <p>&copy; 2023 ShowRoom. All rights reserved.</p>
         </div>

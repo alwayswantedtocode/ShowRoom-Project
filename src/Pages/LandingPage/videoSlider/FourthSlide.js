@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import MayBach from "../../../Images/BENZ/Mercedes-Maybach/Maybach-use.mp4";
-
+import { NavLink } from "react-router-dom";
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
 
 // l
@@ -36,7 +36,9 @@ const FourthSlide = () => {
         <p className="maybach-chasephrase">The value is in the virtues</p>
       </div>
       <div className="more-info-container">
-        <div className="more-info">Learn More</div>
+        <div className="more-info">
+          <NavLink to="Mercedes/SUV/MayBach">Learn More</NavLink>
+        </div>
         <div className="nav-arrow">
           <BiChevronRight />
         </div>

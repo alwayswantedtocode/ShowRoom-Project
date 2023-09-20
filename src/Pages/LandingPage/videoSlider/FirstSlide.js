@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
 
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
 import AClassSedan from "../../../Images/BENZ/A-Class-Sedan/A-Class-SEDAN-Video-use.mp4";
@@ -45,7 +47,7 @@ const FirstSlide = () => {
   //   return () => {
   //     window.removeEventListener("scroll", handleScroll);
   //   };
-  
+
   // }, []);
 
   return (
@@ -64,7 +66,10 @@ const FirstSlide = () => {
         <p className="chasephrase">The value is in the virtues</p>
       </div>
       <div className="more-info-container">
-        <div className="more-info">Learn More</div>
+        <div className="more-info">
+          <NavLink to="Mercedes/Sedan/A-Class">Learn More</NavLink>
+        </div>
+
         <div className="nav-arrow">
           <BiChevronRight />
         </div>

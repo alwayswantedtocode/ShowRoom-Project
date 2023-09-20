@@ -18,10 +18,10 @@ import corolla from "../Images/TOYOTAL/corolla/Corolla-13.png";
 import camry from "../Images/TOYOTAL/camry/Camry-one.png";
 import crown from "../Images/TOYOTAL/crown/Crown-one.png";
 import crownhybrid from "../Images/TOYOTAL/crown/toyota-crown-2023-voici-les-prix.jpeg";
-import highlander from "../Images/TOYOTAL/HIGHLANDER/HLD_MY23_0009_V001 (1).png";
+import highlander from "../Images/TOYOTAL/HIGHLANDER/HLD_MY23_0009_V001.png";
 import sequoira from "../Images/TOYOTAL/SEQUOIA/Sequoira-one.png";
 import venza from "../Images/TOYOTAL/VENZA-HYBRID/VENZER-HYBRID-9.png";
-import bz4x from "../Images/TOYOTAL/bZ4X/BZ4_MY23_0065_V001.png";
+import bz4x from "../Images/TOYOTAL/bZ4X/BZ4_MY23_0065_V001.webp";
 // import bz4x from "../Images/TOYOTAL/bZ4X/BZ4_MY23_0065_V001.png";
 const SubMenuLinks = [
   {
@@ -36,42 +36,42 @@ const SubMenuLinks = [
           {
             Description: "A-CLASS SEDAN",
             image: AClass,
-            URL: "/",
+            url: "Mercedes/Sedan/A-Class",
           },
           {
             Description: "E-CLASS SEDAN",
             image: EClass,
-            URL: "/",
+            url: "Mercedes/Sedan/E-Class",
           },
           {
             Description: "S-CLASS SEDAN",
             image: SClass,
-            URL: "/",
+            url: "Mercedes/Sedan/S-Class",
           },
           {
             Description: "EQS SEDAN",
             image: EQS,
-            URL: "/",
+            url: "Mercedes/EV-Sedan/EQS",
           },
           {
             Description: "GLS SUV",
             image: GLS,
-            URL: "/",
+            url: "Mercedes/SUV/GLS",
           },
           {
             Description: "MAYBACH GLS SUV",
             image: Maybach,
-            URL: "/",
+            url: "Mercedes/SUV/MayBach",
           },
           {
             Description: "EQB SUV",
             image: EQB,
-            URL: "/",
+            url: "Mercedes/EV-SUV/EQB",
           },
           {
             Description: "EQS SUV",
             image: EQSSUV,
-            URL: "/",
+            url: "Mercedes/EV-SUV/EQS",
           },
         ],
       },
@@ -84,43 +84,43 @@ const SubMenuLinks = [
           {
             Description: "LEXUS ES",
             image: ES,
-            url: "Lexuspage/ES",
+            url: "Lexus/Sedan/ES",
           },
           {
             Description: "LEXUS LS",
             image: LS,
-            url: "Lexuspage/LS",
+            url: "Lexus/Sedan/LS",
           },
 
           {
             Description: "LEXUS IS",
             image: IS,
-            url: "/",
+            url: "Lexus/Sedan/IS",
           },
           {
             Description: "LEXUS LS-HYBRID",
             image: LSHybrid,
-            url: "Lexuspage/LS-Hybrid",
+            url: "Lexus/EV-Sedan/LS",
           },
           {
             Description: "LEXUS GX",
             image: GX,
-            url: "Lexuspage/GX",
+            url: "Lexus/SUV/GX",
           },
           {
             Description: "LEXUS LX",
             image: LX,
-            url: "Lexuspage/LX",
+            url: "Lexus/SUV/LX",
           },
           {
             Description: "LEXUS RX-HYBRID",
             image: RX,
-            url: "/",
+            url: "Lexus/EV-SUV/RX",
           },
           {
             Description: "LEXUS UX-HYBRID",
             image: UX,
-            url: "/",
+            url: "Lexus/EV-SUV/UX",
           },
         ],
       },
@@ -134,45 +134,45 @@ const SubMenuLinks = [
           {
             Description: "COROLLA",
             image: corolla,
-            URL: "/",
+            url: "Toyota/Sedan/Corolla",
           },
           {
             Description: "CAMRY",
             image: camry,
-            URL: "/",
+            url: "Toyota/Sedan/Camry",
           },
 
           {
             Description: "CROWN",
             image: crown,
-            URL: "/",
+            url: "Toyota/Sedan/Crown",
           },
           {
             Description: "CROWN-HYBRID",
             image: crownhybrid,
-            URL: "/",
+            url: "Toyota/EV-Sedan/Crown",
           },
 
           {
             Description: "HIGHLANDER",
             image: highlander,
-            URL: "/",
+            url: "Toyota/SUV/Highlander",
           },
 
           {
             Description: "SEQUOIRA",
             image: sequoira,
-            URL: "/",
+            url: "Toyota/SUV/Sequiora",
           },
           {
             Description: "VENZA-HYBRID",
             image: venza,
-            URL: "/",
+            url: "Toyota/EV-SUV/Venza",
           },
           {
             Description: "bZ4X",
             image: bz4x,
-            URL: "/",
+            url: "Toyota/EV-SUV/BZ4X",
           },
         ],
       },

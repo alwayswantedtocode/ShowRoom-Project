@@ -20,7 +20,7 @@
 }
 hr {
   width: 90%;
-  margin: 1rem 2rem;
+  margin: 0rem 2rem;
   border: 0.6px solid #f2f2f2;
 }
 
@@ -110,9 +110,10 @@ hr {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+
 }
 .Car-Name h2 {
-  font-size: 1.1rem;
+  font-size: 0.1rem;
 }
 .Car-Name p {
   color: white;
@@ -140,7 +141,6 @@ hr {
   align-items: center;
   position: relative;
   top: 9%;
-
 }
 .Retail-Btn {
   display: flex;
@@ -244,9 +244,9 @@ hr {
   }
   .Card-image {
     visibility: visible;
-    width: 17.125rem;
-    height: 8.375rem;
-    bottom: 15%;
+    width: 16.125rem;
+    height: 6.375rem;
+    bottom: 18%;
   }
   .image img {
     object-fit: cover;
@@ -255,13 +255,13 @@ hr {
     width: 100%;
     height: 2rem;
     display: flex;
-    top: 35%;
+    top: 40%;
   }
   .Retail-Btn {
     height: 2rem;
   }
 }
-@media screen and (min-width: 912px) {
+/* @media screen and (min-width: 912px) {
   .Hero-container .Hero {
     width: 100%;
     height: 37rem;
@@ -269,21 +269,21 @@ hr {
   .Hero > img {
     object-fit: cover;
   }
-}
+} */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 912px) {
   .Hero-container .Hero {
     width: 100%;
     height: 42rem;
   }
   .card {
     width: 14.875rem;
-    height: 26.0625rem;
+    height: 23.0625rem;
   }
 
   .Card-Tag {
     width: 14.875rem;
-    height: 26.0625rem;
+    height: 23.0625rem;
   }
 
   .Car-Year-Type .release-year {
@@ -311,8 +311,8 @@ hr {
     font-size: 1.5rem;
   }
   .Card-image {
-    width: 23.125rem;
-    height: 11.375rem;
+    width: 20.125rem;
+    height: 9.375rem;
     bottom: 17%;
   }
   .Card-image .image img {
@@ -322,12 +322,12 @@ hr {
     width: 100%;
     height: 3rem;
     display: flex;
-    top: 48%;
+    top: 38%;
   }
   .Retail-Btn {
-    width: 12rem;
-    height: 3.375rem;
-    font-size: 1.25rem;
+    width: 10rem;
+    height: 2.875rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -351,7 +351,7 @@ hr {
 }
 .Exterior-wrapper {
   width: 100%;
-  height: 21.25rem;
+  height: 35.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,6 +360,9 @@ hr {
 }
 
 .Exterior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   position: relative;
@@ -367,7 +370,8 @@ hr {
 
 .Exterior-Color-slide-container {
   display: none;
-  width: 100%;
+  flex: 0 0 80%;
+  width: 80%;
   position: absolute;
   height: 100%;
 }
@@ -478,21 +482,10 @@ hr {
   visibility: visible;
 }
 
-@media screen and (min-width: 540px) {
-  .Exterior-wrapper {
-    width: 100%;
-    height: 24.25rem;
-  }
-}
 @media screen and (min-width: 768px) {
-  .Exterior-wrapper {
-    width: 100%;
-    height: 31.25rem;
-  }
   .Exterior {
-    width: 100%;
+    width: 80%;
     height: 100%;
-
     position: relative;
   }
 
@@ -527,37 +520,14 @@ hr {
   .Exterior {
     display: flex;
     justify-content: center;
-    width: 95%;
-    height: 100%;
-    position: relative;
   }
-  .Exterior-Color-slide-container {
-    display: none;
-    width: 80%;
-    position: absolute;
-    height: 100%;
+
+  .Exterior-Color-Image {
+    visibility: hidden;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .Exterior-wrapper {
-    width: 100%;
-    height: 35.25rem;
-  }
-  .Exterior {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-    position: relative;
-  }
-  .Exterior-Color-slide-container {
-    display: none;
-    width: 70%;
-    position: absolute;
-    height: 100%;
-  }
-}
 /* Performance section */
 .Performance-section {
   display: flex;
@@ -597,6 +567,9 @@ hr {
 }
 .content span {
   width: max-content;
+}
+.content span h4 {
+  text-transform: uppercase;
 }
 .content p {
   color: rgb(79, 79, 79);
@@ -719,22 +692,27 @@ hr {
 
 .design {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   position: relative;
   /* border: 2px solid rgb(0, 255, 76); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
 }
 .design-image-container {
   width: 100%;
-  flex: 1;
-  border: 2px solid rgb(25, 0, 255);
+  /*flex: 1; */
+  /* flex-basis: 500px; */
 }
 .design-image {
-  flex: 0 0 40%;
+  /* flex: 0 0 40%; */
   /* width: 100%; */
   position: absolute;
   visibility: hidden;
   transition: all 0.5s ease-in-out;
   opacity: 0;
+  /* border: 2px solid blue; */
 }
 .design-image img {
   width: 100%;
@@ -752,16 +730,13 @@ hr {
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-  border: 2px solid rgb(255, 0, 68);
   position: relative;
   top: 1%;
+  /* border: 2px solid red; */
 }
 .design-info {
   width: 100%;
   text-align: left;
-  flex: 0 0 30%;
-  border: 2px solid rgb(25, 0, 255);
-  /* margin: 3rem 0; */
 }
 
 .info {
@@ -770,6 +745,7 @@ hr {
   padding: 0 0.5rem;
   display: none;
   animation: moving 0.5s ease-in-out;
+  /* border: 2px solid red; */
 }
 @keyframes moving {
   from {
@@ -840,20 +816,31 @@ hr {
   .design-image-container {
     position: relative;
     flex: 1;
-    height: 100%;
-    margin-left: 3rem;
+    height: 80%;
+    margin-left: 2rem;
   }
   .design-image {
     flex: 0 0 70%;
-    /* width: 100%; */
+
     position: absolute;
     visibility: hidden;
     transition: all 0.5s ease-in-out;
     opacity: 0;
   }
+
+  .design-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  .design-image.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .design-info-menu {
-    flex-shrink: 0;
-    width: 50%;
+    flex-basis: 300px;
     position: relative;
     top: 1%;
   }
@@ -865,7 +852,7 @@ hr {
   .info p {
     color: rgb(79, 79, 79);
     text-align: left;
-    /* font-size: 0.85rem; */
+
     padding-right: 1.5rem;
   }
   .design-menu {
@@ -877,41 +864,17 @@ hr {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .design-info-menu {
-    flex-shrink: 0;
-    width: 45%;
-  }
-}
-@media screen and (min-width: 912px) {
-  .design-image-container {
-    position: relative;
-    flex: 3;
-    height: 100%;
-    margin-left: 2rem;
-  }
-  .design-info-menu {
-    /* flex: 2; */
-    width: 35%;
-    flex-shrink: 0;
-  }
-}
 @media screen and (min-width: 1024px) {
   .design {
     display: flex;
   }
-  .design-image-container {
-    flex: 3;
-  }
+
   .design-info-menu {
-    flex-shrink: 0;
-    width: 28%;
-    position: relative;
-    top: 10%;
-    margin-top: 2rem;
+    flex-basis: 320px;
+    margin-top: 3rem;
   }
   .design-info {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1061,10 +1024,10 @@ hr {
   width: 100%;
   height: 100%;
   position: relative;
-  border: 2px solid rgb(2, 105, 41);
-  margin: 0 0.3rem;
+  /* border: 2px solid rgb(2, 105, 41); */
+  /* margin: 0 0.3rem; */
 }
-.Gallery-slider-container {
+.Gallery-wrapper {
   overflow: hidden;
   /* display: flex;
   flex-direction: column;
@@ -1072,47 +1035,94 @@ hr {
   width: 100%;
   max-width: 100%;
   position: relative;
-  border: 2px solid rgb(2, 105, 41);
+  /* border: 2px solid rgb(2, 105, 41); */
 }
 
 /* Flex container for the slider */
-.gallery-relative-containter {
+.gallery-slider-containter {
+  gap: 0.5rem;
+  /* flex-basis: 300px; */
+  /* display: grid;
+  
+  grid-auto-flow: column;
+  grid-auto-columns: 50%; */
   display: flex;
-  transition: transform 0.5s ease;
-  border: 2px solid rgb(83, 5, 100);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  /* animation: moving 0.5s ease-in-out; */
+
+  /* border: 2px solid rgb(83, 5, 100); */
 }
 
 /* Style for each slide in the slider */
 .gallery-slider {
-  /* width: 80%; */
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  flex: 0 0 60%; /* Assuming you want to show three images at a time */
-  /*padding: 0 10px;  Adjust spacing between slides as needed */
-  border: 2px solid brown;
-  
+  flex: 0 0 50%;
+
+  /*flex: 1; Assuming you want to show three images at a time */
+  /* transition: all 0.5s ease-in-out; */
+
+  /* padding: 0 10px;  Adjust spacing between slides as needed */
+  /* border: 2px solid brown; */
 }
+
 /* Styles for the slider images */
 .gallery-slider img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-slider.active {
-  transform: translateX(-50%);
+  /* transform: translateX(-${activeImage *100}%); */
+  flex: 0 0 55%;
+
+  /* transform: translateX(0%); */
+
+  /* height: 40%; */
 }
-/* Center the active slide */
+
+/* Center the active slide
 .gallery-relative-containter.center-slide {
   transform: translateX(-50%);
 }
 
-/* Move previous slide to the left */
+/* Move previous slide to the left *
 .gallery-relative-containter.move-to-left {
   transform: translateX(-150%);
 }
 
-/* Move next slide to the right */
+/* Move next slide to the right *
 .gallery-relative-containter.move-to-right {
   transform: translateX(50%);
+} */
+.ctrl-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  border: 2px solid green;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.prev-btn,
+.next-btn {
+  display: flex;
+  justify-content: center;
+  color: rgb(161, 161, 161);
+  background-color: transparent;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgb(217, 217, 217);
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 540px) {
+  .prev-btn,
+  .next-btn {
+    width: 3rem;
+    height: 3rem;
+  }
 }

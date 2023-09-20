@@ -131,15 +131,14 @@ p {
 .footerSection {
   position: relative;
   width: 100%;
-  /* height: 90rem; */
+  height: 20rem;
+
 }
 
 .footer {
   position: absolute;
   width: 100%;
-  /* height: 100%; */
   left: 0px;
-
   background: #000000;
 }
 .footer-logo-info {
@@ -236,6 +235,9 @@ p {
   font-size: 1.2rem;
   color: #fff;
   
+}
+.Text h5{
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {

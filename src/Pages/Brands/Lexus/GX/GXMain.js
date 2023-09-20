@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {
   exteriorheading,
   performanceheading,
@@ -6,7 +6,7 @@ import {
   designheading,
   techheading,
 } from "./Data/ModelData";
-import Hero from "../../../../Images/LEXUS/GX/Lexus-GX-Gallery7-desktop-1440x811-LEX-GXG-MY22-0057.png";
+import Hero from "../../../../Images/LEXUS/GX/Lexus-GX-15-Gallery.png";
 import Card from "./Card";
 import Exterior from "./Exterior";
 import Performance from "./Performance";
@@ -15,6 +15,10 @@ import Gallery from "./Gallery";
 import "../Lexus.css";
 
 const Main = () => {
+   useEffect(() => {
+     // Scroll to the top of the page when the component is mounted
+     window.scrollTo(0, 0);
+   }, []);
   return (
     <main className="Model-Main">
       {/* Hero */}

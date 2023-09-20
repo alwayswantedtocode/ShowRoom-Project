@@ -1,9 +1,9 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import design from "./Data/ModelData";
 // Design
-import comfort from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-UltimateComfort-Design-1440x811-LEX-GXG-MY22-0052.webp";
-import tempcontrol from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-PersonalizedTemperature-Design-1440x800-LEX-GXG-MY22-0006-05.webp";
-import heatedsteering from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-13-Gallery-1440x800-LEX-GXG-MY22-0070.png";
+import comfort from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-UltimateComfort-Design-1440x811-LEX-GXG-MY22-0052.jpg";
+import tempcontrol from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-PersonalizedTemperature-Design-1440x800-LEX-GXG-MY22-0006-05.jpg";
+import heatedsteering from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-13-Gallery-1440x811-LEX-GXG-MY22-0070.jpg";
 import { useGlobalContext } from "../../../../GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
@@ -118,7 +118,7 @@ const Design = () => {
         </div>
       </div>
       <div className="Click-showmore" onClick={() => setShowMore1(!showMore1)}>
-        MORE GX PERFORMANCE FEATURES
+        MORE 
         <button className="Click-showmore-btn">
           {showMore1 ? <FaChevronUp /> : <FaChevronDown />}
         </button>
