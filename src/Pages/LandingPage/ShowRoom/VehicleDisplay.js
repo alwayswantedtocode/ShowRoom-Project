@@ -21,7 +21,7 @@ const MercedesPage = () => {
     <main className="main-container">
       <section className="Showroom-Section">
         <div className="Showroom-Header">
-          <p> VEHICLE SHOWROOM</p>
+          <h2> vehicle showroow</h2>
         </div>
         {/* Tab Navigation--Category */}
 

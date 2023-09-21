@@ -13,7 +13,7 @@ const Card = () => {
             <span className="Car-Brand">Toyota</span>
           </div>
           <div className="Car-Name">
-            <h2>Crown</h2>
+            <h2>Crown Hybrid</h2>
             <p>$25,999</p>
           </div>
         </div>

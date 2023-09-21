@@ -248,7 +248,7 @@ Video Slide Section
   width: 100%;
   background-color: #fff;
   overflow: hidden;
-  margin: 2rem 0 3rem 0;
+  margin: 3rem 0 3rem 0;
 }
 .new-vehicle-heading {
   width: 100%;
@@ -256,6 +256,7 @@ Video Slide Section
   color: #222;
   margin-bottom: 2rem;
   padding: 0.7rem;
+  
 }
 
 .new-vechicle-slide-container {
@@ -322,7 +323,7 @@ Video Slide Section
   color: var(--clr-black);
 }
 .brand-features-amount-cover h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 .brand-features-amount-cover > .features {

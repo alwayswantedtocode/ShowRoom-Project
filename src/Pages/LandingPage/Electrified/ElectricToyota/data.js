@@ -1,5 +1,5 @@
 import Venza from "../../../../Images//TOYOTAL/VENZA-HYBRID/VENZER-HYBRID-1.png";
-import VenzaInterior from "../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/VEN_MY23_0041_V002_X9ZKdevaxnQAh3al42.png";
+import VenzaInterior from "../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/VEN_MY23_0042_V002_ZHR_rUHFoDMzhHnpOU.png";
 import SecondInterior from "../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/VEN_MY23_0040_V001_KwFCfW4vQvPymksO7fM.png";
 // go
 const toyotaData = [

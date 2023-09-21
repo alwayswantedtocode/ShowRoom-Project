@@ -113,7 +113,7 @@ hr {
 
 }
 .Car-Name h2 {
-  font-size: 0.1rem;
+  font-size: 0.8rem;
 }
 .Car-Name p {
   color: white;
@@ -261,15 +261,6 @@ hr {
     height: 2rem;
   }
 }
-/* @media screen and (min-width: 912px) {
-  .Hero-container .Hero {
-    width: 100%;
-    height: 37rem;
-  }
-  .Hero > img {
-    object-fit: cover;
-  }
-} */
 
 @media screen and (min-width: 912px) {
   .Hero-container .Hero {
@@ -303,7 +294,7 @@ hr {
   }
 
   .Car-Name h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .Car-Name p {
     color: white;
@@ -679,7 +670,6 @@ hr {
   align-items: center;
   width: 100%;
   height: max-content;
-  /* border: 2px solid blue; */
 }
 
 .Design-wrapper {
@@ -692,9 +682,7 @@ hr {
 
 .design {
   width: 100%;
-  /* height: 100%; */
   position: relative;
-  /* border: 2px solid rgb(0, 255, 76); */
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -702,17 +690,14 @@ hr {
 }
 .design-image-container {
   width: 100%;
-  /*flex: 1; */
-  /* flex-basis: 500px; */
 }
 .design-image {
-  /* flex: 0 0 40%; */
-  /* width: 100%; */
+
   position: absolute;
   visibility: hidden;
   transition: all 0.5s ease-in-out;
   opacity: 0;
-  /* border: 2px solid blue; */
+
 }
 .design-image img {
   width: 100%;
@@ -732,7 +717,6 @@ hr {
   width: 100%;
   position: relative;
   top: 1%;
-  /* border: 2px solid red; */
 }
 .design-info {
   width: 100%;
@@ -745,7 +729,6 @@ hr {
   padding: 0 0.5rem;
   display: none;
   animation: moving 0.5s ease-in-out;
-  /* border: 2px solid red; */
 }
 @keyframes moving {
   from {
@@ -940,9 +923,6 @@ hr {
 }
 
 @media screen and (min-width: 375px) {
-  /* .card-info-wrapper {
-    height: 15rem;
-  } */
   .card-image {
     height: 50%;
   }
@@ -1024,47 +1004,29 @@ hr {
   width: 100%;
   height: 100%;
   position: relative;
-  /* border: 2px solid rgb(2, 105, 41); */
-  /* margin: 0 0.3rem; */
 }
 .Gallery-wrapper {
   overflow: hidden;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   width: 100%;
   max-width: 100%;
   position: relative;
-  /* border: 2px solid rgb(2, 105, 41); */
+
 }
 
 /* Flex container for the slider */
 .gallery-slider-containter {
   gap: 0.5rem;
-  /* flex-basis: 300px; */
-  /* display: grid;
-  
-  grid-auto-flow: column;
-  grid-auto-columns: 50%; */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  /* animation: moving 0.5s ease-in-out; */
 
-  /* border: 2px solid rgb(83, 5, 100); */
 }
 
 /* Style for each slide in the slider */
 .gallery-slider {
   flex: 0 0 50%;
-
-  /*flex: 1; Assuming you want to show three images at a time */
-  /* transition: all 0.5s ease-in-out; */
-
-  /* padding: 0 10px;  Adjust spacing between slides as needed */
-  /* border: 2px solid brown; */
 }
 
 /* Styles for the slider images */
@@ -1074,28 +1036,10 @@ hr {
 }
 
 .gallery-slider.active {
-  /* transform: translateX(-${activeImage *100}%); */
   flex: 0 0 55%;
-
-  /* transform: translateX(0%); */
-
-  /* height: 40%; */
 }
 
-/* Center the active slide
-.gallery-relative-containter.center-slide {
-  transform: translateX(-50%);
-}
 
-/* Move previous slide to the left *
-.gallery-relative-containter.move-to-left {
-  transform: translateX(-150%);
-}
-
-/* Move next slide to the right *
-.gallery-relative-containter.move-to-right {
-  transform: translateX(50%);
-} */
 .ctrl-btn-container {
   display: flex;
   justify-content: center;
