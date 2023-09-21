@@ -30,7 +30,7 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
     //  visible;
-  }, [prevScrollPos]);
+  }, [visible]);
 
   //Mouseover buttons
   const displaySubMenu = (e) => {
