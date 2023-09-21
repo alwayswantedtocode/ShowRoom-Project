@@ -17,10 +17,11 @@ const NavBar = () => {
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
     const visibleNav = currentScrollPos < prevScrollPos;
-   
-
+  
+    
     setPrevScrollPos(currentScrollPos);
     setVisible(visibleNav);
+   
   };
 
   useEffect(() => {
@@ -28,8 +29,8 @@ const NavBar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-    
-  }, [prevScrollPos, visible]);
+    //  visible;
+  }, [prevScrollPos]);
 
   //Mouseover buttons
   const displaySubMenu = (e) => {

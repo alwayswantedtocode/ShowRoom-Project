@@ -51,7 +51,7 @@ hr {
 }
 
 .card {
-  width: 8rem;
+  width: 9rem;
   height: 11.0625rem;
   position: absolute;
   top: 3%;
@@ -67,7 +67,7 @@ hr {
   background-color: rgb(10, 10, 10, 0.2);
 }
 .Card-Tag {
-  width: 8rem;
+  width: 9rem;
   height: 11.0625rem;
   border-radius: 0.5rem;
   border: 2px;
@@ -82,6 +82,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   margin: 0.1rem 0;
+
 }
 .Car-Year-Type .release-year {
   width: 7rem;
@@ -221,17 +222,16 @@ hr {
   }
   .Car-Year-Type .release-year {
     width: 7rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .Car-Year-Type .line {
     border: 2px solid rgb(255, 255, 255);
-    height: 1.5rem;
+    height: 1.3rem;
   }
   .Car-Year-Type .Car-Brand {
     color: white;
     width: 7rem;
-
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
   }
 
@@ -1046,7 +1046,6 @@ hr {
   align-items: center;
   width: 100%;
   height: max-content;
-  border: 2px solid green;
   gap: 1rem;
   margin-top: 0.5rem;
 }
