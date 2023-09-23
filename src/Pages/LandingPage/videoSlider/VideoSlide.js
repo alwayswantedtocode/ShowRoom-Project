@@ -7,7 +7,7 @@ const VideoSlide = ({ videoref }) => {
   const [videoslide, setVideoslide] = useState(Data);
   const [index, setIndex] = useState(0);
 
-  // const [childHeight, setChildHeight] = useState(0);
+ 
 
   const slideRef = useRef();
   const heightRef = useRef();
@@ -21,6 +21,8 @@ const VideoSlide = ({ videoref }) => {
     }, 5000);
     return () => clearInterval(slideInterval);
   }, [index, videoslide]);
+  
+  
 
   const nextHandle = () => {
     const indexSlide = index < videoslide.length - 1 ? index + 1 : 0;

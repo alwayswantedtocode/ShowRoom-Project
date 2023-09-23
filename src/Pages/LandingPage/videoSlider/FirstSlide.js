@@ -52,7 +52,7 @@ const FirstSlide = () => {
 
   return (
     <div className="video-container" ref={containerRef}>
-      <video ref={videoRef}>
+      <video ref={videoRef} >
         <source src={AClassSedan} />
       </video>
 
@@ -66,10 +66,10 @@ const FirstSlide = () => {
         <p className="chasephrase">The value is in the virtues</p>
       </div>
       <div className="more-info-container">
-        <div className="more-info">
-          <NavLink to="Mercedes/Sedan/A-Class">Learn More</NavLink>
+         <NavLink to="Mercedes/Sedan/A-Class"><div className="more-info">
+         Learn More
         </div>
-
+</NavLink>
         <div className="nav-arrow">
           <BiChevronRight />
         </div>
