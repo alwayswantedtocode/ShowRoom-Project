@@ -237,7 +237,6 @@ header {
 .Nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
   align-content: center;
   justify-content: center;
   position: relative;
@@ -245,7 +244,6 @@ header {
   min-height: 5.275rem;
   top: 0px;
   z-index: 2;
-  /* DS Shades/White */
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -270,14 +268,26 @@ header {
 .NavContainer > .navLogo {
   display: flex;
 }
+.navLogo navLink {
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+}
+.navLogo a:visited {
+  color: #000000;
+}
 
 .navLinkContainer {
   display: none;
 }
-.navLink {
+
+.navLinkContainer > navLink {
   text-decoration: none;
   color: #000000;
   margin: 0;
+}
+.navLinkContainer a:visited {
+  color: #000000;
 }
 @media screen and (min-width: 912px) {
   .navLinkContainer {
@@ -305,6 +315,9 @@ header {
     color: #ff7917;
     transition: all 0.3s ease-in-out;
   }
+   .navLinkContainer a:visited{
+    color: #000000;
+   }
   .signIn-btn {
     font-family: "Alegreya", serif;
     font-style: normal;
@@ -313,9 +326,13 @@ header {
     background-color: #68dbff;
     border-radius: 0.31rem;
   }
-  .signIn-btn > .navLink {
+  .signIn-btn .navLink {
     color: white;
   }
+   .signIn-btn a:visited {
+    color: white;
+  }
+
   .search-btn {
     font-style: normal;
     font-size: 1.25rem;
@@ -331,7 +348,8 @@ header {
 =====================
 */
 .toggle-Menubar {
-  font-size: 2rem;
+  width: 3rem;
+  font-size: 2.2rem;
   display: flex;
   background: none;
   align-items: center;
@@ -340,8 +358,7 @@ header {
   margin: auto 1rem;
   cursor: pointer;
   border: none;
-  outline: none;
-  border-radius: 0.3rem;
+
 }
 /* Webview */
 @media screen and (min-width: 912px) {
@@ -489,14 +506,25 @@ header {
   margin-bottom: 1rem;
 }
 .closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
   font-size: 2.2rem;
+  margin: 0.6rem 0;
   cursor: pointer;
   border: none;
-  outline: none;
   background: none;
+  color: #000000;
 }
 .mobile-nav {
   width: 100%;
+}
+.mobile-nav a:visited{
+  color: #000000;
+}
+.mobile-nav a:hover{
+ color: #ff7917;
 }
 .Mobile-navLinkContainer {
   width: 100%;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, } from "react";
 import { useGlobalContext } from "../GlobalContext";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";

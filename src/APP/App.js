@@ -39,6 +39,9 @@ import HIGHLAND from "../Pages/Brands/Toyota/Highlander/HighlanderMain"
 import SEQUIORA from "../Pages/Brands/Toyota/Sequiora/SequioraMain"
 import VENZA from "../Pages/Brands/Toyota/Venza/VenzaMain"
 
+import Signup from "../Pages/UserAuthentication/Rgistration"
+import SignIn from "../Pages/UserAuthentication/SignIn";
+
 import React from "react";
 
 const router = createBrowserRouter(
@@ -48,6 +51,8 @@ const router = createBrowserRouter(
 
       <Route path="Dealers" element={<Dealers />} />
       <Route path="Support" element={<Supports />} />
+      <Route path="SignUp" element={<Signup/>}/>
+      <Route path="SignIn" element={<SignIn/>}/>
 
       <Route path="Mercedes/Sedan/A-Class" element={<AClass />} />
       <Route path="Mercedes/Sedan/E-Class" element={<EClass />} />

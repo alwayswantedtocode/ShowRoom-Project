@@ -1,4 +1,3 @@
-
 import { Outlet } from "react-router-dom";
 import Navbar from "../NavBar/NavBar";
 import SlideMenu from "../NavBar/SlideMenu";
@@ -7,10 +6,12 @@ import Footer from "../Footer/Footer";
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <SlideMenu />
-      <Outlet />
-      <Footer />
+      <div style={{position:"relative"}}>
+        <Navbar />
+        <SlideMenu />
+        <Outlet />
+        <Footer />
+      </div>
     </>
   );
 };

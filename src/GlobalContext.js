@@ -27,7 +27,7 @@ export const AppProvider = ({ children }) => {
   const openSubMenu = (text, coordinates) => {
     const names = SubMenuLinks.find((link) => link.page === text);
     setPage(names);
-    setLocation(coordinates);
+    // setLocation(coordinates);
     setIsSubMenuOpen(true);
   };
   const closeSubMenu = () => {

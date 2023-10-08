@@ -8,7 +8,7 @@
   cursor: pointer;
   font-weight: 500;
 }
-.Click-showmore-btn {
+.Click-showmore .Click-showmore-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +17,7 @@
   padding: 0.2rem;
   background-color: transparent;
   cursor: pointer;
+  color: black;
 }
 hr {
   width: 90%;

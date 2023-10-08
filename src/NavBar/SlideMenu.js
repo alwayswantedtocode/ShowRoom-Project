@@ -48,7 +48,11 @@ const SlideMenu = () => {
               className="submenu-dropdown"
               onClick={() => setShowInfo(!showInfo)}
             >
-              {showInfo ? <BiChevronUp /> : <BiChevronDown />}
+              {showInfo ? (
+                <BiChevronUp style={{ color: "black" }} />
+              ) : (
+                <BiChevronDown style={{ color: "black" }} />
+              )}
             </button>
           </div>
           {/* Mobileview Submenu */}

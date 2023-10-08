@@ -308,8 +308,6 @@ button Styles
     display: flex;
     color: var(--clr-white);
     padding: 0 0.3rem 0 0.3rem;
-    /* margin: 0 0.4rem 0 0.4rem; */
-    /* border: 2px solid green; */
     text-align: center;
     justify-content: center;
     justify-items: center;

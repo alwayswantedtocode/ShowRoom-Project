@@ -7,8 +7,7 @@ import SubMenu from "./SubMenu";
 import "./Navbar.css";
 
 const NavBar = () => {
-  const { openMobileMenu, openSubMenu, closeSubMenu, isSubMenuOpen } =
-    useGlobalContext();
+  const { openMobileMenu, openSubMenu, isSubMenuOpen } = useGlobalContext();
 
   // DISAPEARING NAVBAR
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -17,11 +16,9 @@ const NavBar = () => {
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
     const visibleNav = currentScrollPos < prevScrollPos;
-  
-    
+
     setPrevScrollPos(currentScrollPos);
     setVisible(visibleNav);
-   
   };
 
   useEffect(() => {
@@ -43,7 +40,6 @@ const NavBar = () => {
     // openSubMenu(brand);
     console.log(bottom);
   };
- 
 
   return (
     <header>
@@ -71,8 +67,11 @@ const NavBar = () => {
             <NavLink className="navLink mouseover" to="/Support">
               Support
             </NavLink>
+
             <button className="signIn-btn">
-              <NavLink className="navLink mouseover">Sign in</NavLink>
+              <NavLink to="/Signup" className="navLink mouseover">
+                Sign in
+              </NavLink>
             </button>
 
             <button className="search-btn">
@@ -83,11 +82,11 @@ const NavBar = () => {
           </div>
         </div>
         <aside
-          className={`${
+          className={
             isSubMenuOpen
               ? "subMenuContainer active mouseover"
               : "subMenuContainer"
-          }`}
+          }
         >
           <SubMenu className="mouseover" />
         </aside>
