@@ -2,7 +2,7 @@ import React from "react";
 import leather from "../../../../../Images/BENZ/EQS-SEDAN/interior/2023-EQS-SEDAN-MP-047.png";
 import roof from "../../../../../Images/BENZ/EQS-SEDAN/MBCAN-2023-EQS-SEDAN-GAL-010-XL.png";
 import steering from "../../../../../Images/BENZ/EQS-SEDAN/interior/EQS-Gallery_14-XL.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

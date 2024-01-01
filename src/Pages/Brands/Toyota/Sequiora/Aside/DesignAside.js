@@ -2,7 +2,7 @@ import React from "react";
 import WheelDesign from "../../../../../Images/TOYOTAL/SEQUOIA/SEQ_MY23_0005_V001_OWGaRoCcrgxdTaXW7TCWhKf3.png";
 import PowerExtending from "../../../../../Images/TOYOTAL/SEQUOIA/SEQ_MY23_0040_V001_kCUwpOOZd_cOI0ZlUNqT4.webp";
 import Design from "../../../../../Images/TOYOTAL/SEQUOIA/SEQ_MY23_0015_V001_zQEIHWfZeZ.png";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

@@ -2,7 +2,7 @@ import React from "react";
 import aero from "../../../../../Images/BENZ/EQS-SUV/2023-EQS-SUV-MP-029.jpg";
 import seemless from "../../../../../Images/BENZ/EQS-SUV/2023-EQS-SUV-MP-027.jpg";
 import kicksensor from "../../../../../Images/BENZ/EQS-SUV/Interior/2023-EQS-SUV-Gallery_022-XL.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

@@ -2,7 +2,7 @@ import React from "react";
 import presence from "../../../../../Images/LEXUS/GX/lexus-2023-gx-460-side-atomic-silver-l.jpg";
 import leather from "../../../../../Images/LEXUS/GX/INTERIOR/lexus-2023-gx-460-features-design-genuine-leather-upholstery-l.jpg";
 import versatility from "../../../../../Images/LEXUS/GX/INTERIOR/lexus-2023-gx-460-features-design-ample-cargo-space-l.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

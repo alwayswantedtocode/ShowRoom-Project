@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import Elegance from "../../../../Images/BENZ/A-Class-Sedan/Mercedes-Benz-A-Class_Sedan-2023-hd.jpg";
 import hightech from "../../../../Images/BENZ/A-Class-Sedan/INTERIOR/new-entry-level-mercedes-benz-concept-going-to-iaa-2023-is-that-an-a-class-sedan_19.jpg";
 import wheels from "../../../../Images/BENZ/A-Class-Sedan/2023-mercedes-benz-a-class-29.jpg";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

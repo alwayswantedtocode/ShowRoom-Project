@@ -34,14 +34,14 @@ const SecondSlide = () => {
         <h3 className="brand-type">Highlander</h3>
         <p className="chasephrase">Go above and beyond the ordinary.</p>
       </div>
-      <div className="more-info-container">
-        <div className="more-info">
-          <NavLink to="Toyota/SUV/Highlander">Learn More</NavLink>
+      <NavLink to="Toyota/SUV/Highlander">
+        <div className="more-info-container">
+          <div className="more-info">Learn More</div>
+          <div className="nav-arrow">
+            <BiChevronRight />
+          </div>
         </div>
-        <div className="nav-arrow">
-          <BiChevronRight />
-        </div>
-      </div>
+      </NavLink>
     </div>
   );
 };

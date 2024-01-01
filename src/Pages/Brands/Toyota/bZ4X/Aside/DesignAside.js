@@ -2,7 +2,7 @@ import React from "react";
 import Wheels from "../../../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0037_V001.webp";
 import Exceptional from "../../../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0044_V001.png";
 import Intelligent from "../../../../../Images/TOYOTAL/bZ4X/interior/BZ4_MY23_0043_V004.png";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

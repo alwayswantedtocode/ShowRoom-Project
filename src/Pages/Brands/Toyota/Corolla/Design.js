@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import Interior from "../../../../Images/TOYOTAL/corolla/interior/COH_MY23_0014_V002_xCEjLb0ZemRIA.png";
 import TrimmedSeats from "../../../../Images/TOYOTAL/corolla/interior/COR_MY23_0010_V002.png";
 import Nightshade from "../../../../Images/TOYOTAL/corolla/COH_MY24_0003_V001_Uw1nkPsNyu2C3WXj5rEwqA7kQt5D_z5.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

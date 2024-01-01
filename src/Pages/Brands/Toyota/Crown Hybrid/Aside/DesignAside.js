@@ -2,7 +2,7 @@ import React from "react";
 import STEERING from "../../../../../Images/TOYOTAL/crown/interior/2023_Toyota_Crown_Steering_Wheel_1.jpg";
 import interior from "../../../../../Images/TOYOTAL/crown/interior/toyota-2023-crown-platinum-interior-softex-black-back-seats-l.jpg";
 import CABIN from "../../../../../Images/TOYOTAL/crown/interior/1.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

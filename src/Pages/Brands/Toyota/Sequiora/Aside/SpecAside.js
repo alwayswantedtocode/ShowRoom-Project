@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/TOYOTAL/SEQUOIA/INTERIOR/SEQ_MY23_0026_V001_xtYKAvJVhLlHSl118.webp";
 import fifthImage from "../../../../../Images/TOYOTAL/SEQUOIA/INTERIOR/SEQ_MY23_0023_V001_xs0QDlSJV77PjHzA19bGUIRO2P82t.webp";
 import sixthImage from "../../../../../Images/TOYOTAL/SEQUOIA/SEQ_MY23_0087_V002_features_mYnuuGOrlojdIsd9iIOJv3GKg7C_.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

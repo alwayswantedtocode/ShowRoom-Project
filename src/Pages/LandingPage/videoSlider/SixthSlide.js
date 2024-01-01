@@ -34,14 +34,14 @@ const SixthSlide = () => {
         <h3 className="brand-type">Lexus Lx 600 </h3>
         <p className="chasephrase">Luxury re-imagined on wheels</p>
       </div>
-      <div className="more-info-container">
-        <div className="more-info">
-          <NavLink to="Lexus/SUV/LX">Learn More</NavLink>
+      <NavLink to="Lexus/SUV/LX">
+        <div className="more-info-container">
+          <div className="more-info">Learn More</div>
+          <div className="nav-arrow">
+            <BiChevronRight />
+          </div>
         </div>
-        <div className="nav-arrow">
-          <BiChevronRight />
-        </div>
-      </div>
+      </NavLink>
     </div>
   );
 };

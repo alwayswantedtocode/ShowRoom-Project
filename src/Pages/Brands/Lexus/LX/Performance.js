@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/LEXUS/LX600/2022-lexus-lx-experience-
 import secondImage from "../../../../Images/LEXUS/LX600/Lexus-lx-performance-thumbnail-2-advanced-capablity-desktop-1440x490-LEX-LXG-MY22-0010.webp";
 import thirdImage from "../../../../Images/LEXUS/LX600/2022-lexus-lx-600-f-sport-16.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

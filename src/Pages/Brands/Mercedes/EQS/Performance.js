@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/BENZ/EQS-SUV/2023-EQS-SUV-Gallery_005
 import secondImage from "../../../../Images/BENZ/EQS-SEDAN/interior/2023-EQS-SEDAN-MP-006.webp";
 import thirdImage from "../../../../Images/BENZ/EQS-SEDAN/2023-EQS-SEDAN-MP-015.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

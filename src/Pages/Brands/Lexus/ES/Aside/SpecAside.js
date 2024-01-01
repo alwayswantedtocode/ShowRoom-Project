@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/LEXUS/ES/1051605.jpg";
 import fifthImage from "../../../../../Images/LEXUS/ES/Used-2019-Lexus-ES-350-F-SPORT-35L-SEDAN-8-SPD-NAV-SUNROOF-REARVIEW.jpg";
 import sixthImage from "../../../../../Images/LEXUS/ES/Interior/2020-Lexus-ES-Front-Interior-and-Dashboard.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

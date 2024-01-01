@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0032_V001_1.web
 import secondImage from "../../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0039_V001_1.png";
 import thirdImage from "../../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0035_V001.png";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

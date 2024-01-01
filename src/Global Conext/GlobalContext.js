@@ -1,20 +1,23 @@
-import React, { useState, useContext } from "react";
-import SubMenuLinks from "./NavBar/NavbarData";
+import React, { useState, useContext, useEffect } from "react";
+import SubMenuLinks from "../NavBar/NavbarData";
+
 
 const GlobalContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
-  const [showMore, setShowMore] = useState(false);
-  const [showMore1, setShowMore1] = useState(false);
 
-  const [location, setLocation] = useState({});
+  // const [location, setLocation] = useState({});
 
   const [page, setPage] = useState({
     names: "",
     Links: [],
   }); //refer to read.me
+
+  // Show more details About peformance and design
+  const [showMore, setShowMore] = useState(false);
+  const [showMore1, setShowMore1] = useState(false);
 
   //Slide Menu
   const openMobileMenu = () => {
@@ -24,6 +27,7 @@ export const AppProvider = ({ children }) => {
     setIsMobileMenuOpen(false);
   };
 
+  //SubMenu dropdown
   const openSubMenu = (text, coordinates) => {
     const names = SubMenuLinks.find((link) => link.page === text);
     setPage(names);
@@ -35,6 +39,9 @@ export const AppProvider = ({ children }) => {
     // window.scrollTo(0, 0); // set pageYOffset to zero
   };
 
+  // // SignIn
+
+
   return (
     <GlobalContext.Provider
       value={{
@@ -44,12 +51,17 @@ export const AppProvider = ({ children }) => {
         openSubMenu,
         closeSubMenu,
         isSubMenuOpen,
-        location,
+        // location,
         page,
         showMore,
         setShowMore,
         showMore1,
         setShowMore1,
+        // SignInWithGoogle,
+        // signInHandleSubmit,
+        // signUpHandleSubmit,
+        // user,
+        // setUser,
       }}
     >
       {children}

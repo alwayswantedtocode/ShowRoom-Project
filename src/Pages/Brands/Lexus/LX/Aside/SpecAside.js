@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/LEXUS/LX600/INTERIOR/2022-lexus-lx-experience-interior-front-steering-wheel-1920x1080.webp";
 import fifthImage from "../../../../../Images/LEXUS/LX600/INTERIOR/lx-600-vip-comfort-wireless-charging.png";
 import sixthImage from "../../../../../Images/LEXUS/LX600/2022-Lexus-LX600-Ultra-Luxury_HERO-16x9-1-1.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

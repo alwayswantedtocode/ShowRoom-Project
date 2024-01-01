@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import PremiumInterior from "../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/VEN_MY23_0042_V002_ZHR_rUHFoDMzhHnpOU.png";
 import Headlights from "../../../../Images/TOYOTAL/VENZA-HYBRID/VEN_MY22_0010_V001.png";
 import Ventilated from "../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/0ce20968cd966438035201c1db67115fx.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

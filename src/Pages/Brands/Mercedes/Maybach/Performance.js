@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/BENZ/Mercedes-Maybach/maybach-gls-600
 import secondImage from "../../../../Images/BENZ/Mercedes-Maybach/New folder/2023-GLS-MAYBACH-SUV-MP-003.webp";
 import thirdImage from "../../../../Images/BENZ/Mercedes-Maybach/2023-GLS-MAYBACH-SUV-MP-004.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

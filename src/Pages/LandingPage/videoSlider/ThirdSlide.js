@@ -34,14 +34,14 @@ const ThirdSlide = () => {
         <h3 className="brand-type">lexus E 350</h3>
         <p className="chasephrase">Simple and elegant on the road</p>
       </div>
-      <div className="more-info-container">
-        <div className="more-info">
-          <NavLink to="Lexus/Sedan/ES">Learn More</NavLink>
+      <NavLink to="Lexus/Sedan/ES">
+        <div className="more-info-container">
+          <div className="more-info">Learn More</div>
+          <div className="nav-arrow">
+            <BiChevronRight />
+          </div>
         </div>
-        <div className="nav-arrow">
-          <BiChevronRight />
-        </div>
-      </div>
+      </NavLink>
     </div>
   );
 };

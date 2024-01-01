@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/TOYOTAL/VENZA-HYBRID/VEN_MY22_0007_V001.png";
 import fifthImage from "../../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/2022-Toyota-Venza-Hybrid-drive-modes.jpg";
 import sixthImage from "../../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/maxresdefault.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

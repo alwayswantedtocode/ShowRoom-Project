@@ -13,7 +13,7 @@ const Card = () => {
             <span className="Car-Brand">Lexus</span>
           </div>
           <div className="Car-Name">
-            <h2>LS 500</h2>
+            <h2>LS HYBRID </h2>
             <p>$25,999</p>
           </div>
         </div>

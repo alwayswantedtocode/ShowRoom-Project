@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
 import AClassSedan from "../../../Images/BENZ/A-Class-Sedan/A-Class-SEDAN-Video-use.mp4";
 
@@ -52,7 +51,7 @@ const FirstSlide = () => {
 
   return (
     <div className="video-container" ref={containerRef}>
-      <video ref={videoRef} >
+      <video ref={videoRef}>
         <source src={AClassSedan} />
       </video>
 
@@ -65,15 +64,15 @@ const FirstSlide = () => {
         <h3 className="brand-type">A-Class Sedan</h3>
         <p className="chasephrase">The value is in the virtues</p>
       </div>
-      <div className="more-info-container">
-         <NavLink to="Mercedes/Sedan/A-Class"><div className="more-info">
-         Learn More
+      <NavLink to="Mercedes/Sedan/A-Class">
+        <div className="more-info-container">
+          <div className="more-info">Learn More</div>
+
+          <div className="nav-arrow">
+            <BiChevronRight />
+          </div>
         </div>
-</NavLink>
-        <div className="nav-arrow">
-          <BiChevronRight />
-        </div>
-      </div>
+      </NavLink>
     </div>
   );
 };

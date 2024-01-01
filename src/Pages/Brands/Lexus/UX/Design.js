@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import INTERIOR from "../../../../Images/LEXUS/UX-HYBRID/Interior/test-drive-1920x1080-1.png";
 import CRAFTSMANSHIP from "../../../../Images/LEXUS/UX-HYBRID/Interior/lexus-ux-hybrid-review-joe-harding-goodwood-15081905.jpg";
 import STYLE from "../../../../Images/LEXUS/UX-HYBRID/2023_UXH_Daring_Style.jpg";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

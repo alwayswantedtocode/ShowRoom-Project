@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/LEXUS/RX-350-HYBRID/Interior/2023-Lexus-RX-500h-F-Sport-Interior-Wallpaper.jpg";
 import fifthImage from "../../../../../Images/LEXUS/RX-350-HYBRID/Lexus-RX-MorePerformance-Dynamic-Rear-Steering-550x411-LEX-RXF-MY23-0030.04.jpg";
 import sixthImage from "../../../../../Images/LEXUS/RX-350-HYBRID/Lexus-RX-MorePerformance-AWD-550x411-LEX-RXB-MY23-0005.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

@@ -1,0 +1,191 @@
+/* ===========================
+Registration design
+==============================  */
+
+.Register-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: max-content;
+  border: 2px solid blue;
+}
+.Card {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 50px;
+  gap: 30px;
+}
+.Card h1 {
+  color: #ff7917;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-container {
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+input {
+  width: 20rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid lightgray;
+}
+.Reg-btn {
+  background-color: #68dbff;
+  border: none;
+  width: 9rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  cursor: pointer;
+}
+.Reg-btn:hover {
+  color: #ff7917;
+}
+/*Error message state*/
+.errorAlert {
+  font-size: 0.5rem;
+  display: flex;
+  border-radius: 0.2rem;
+  background-color: rgb(3, 163, 3);
+  visibility: visible;
+  color: #fff;
+}
+.popup-alert {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25rem;
+  display: flex;
+  color: #3c3c3c;
+}
+.offscreen {
+  display: none;
+}
+/*---------------------------*/
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+/*  User Name css Valid Name Alert */
+.checkMark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: seagreen;
+}
+.xMark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: firebrick;
+}
+.hide {
+  display: none;
+}
+.valid {
+  margin-left: 0.25rem;
+}
+.invalid {
+  margin-left: 0.25rem;
+}
+
+.popup-alert {
+  margin-top: 0.25rem;
+  display: flex;
+  color: #3c3c3c;
+}
+.click-4-info {
+  margin-right: 0.2rem;
+  color: #3c3c3c;
+  font-size: 1.4rem;
+}
+/*---------------------------*/
+.emailAlert {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.validemail,
+.invalidemail {
+  height: max-content;
+  display: flex;
+  align-items: center;
+  color: rgb(124, 124, 124);
+}
+
+.validemail p,
+.invalidemail p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #3e3e3e;
+}
+
+.route-login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3e3e3e;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.route-login-page span {
+  border-bottom: 2px solid #3e3e3e;
+}
+.route-login-page span:hover {
+  border-bottom: 2px solid #ff7917;
+  color: #ff7917;
+}
+.route-login-page p {
+  color: #3e3e3e;
+}
+.route-login-page a:visited {
+  color: #3e3e3e;
+}
+
+.Sign-In-Google {
+  width: 13rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #4285f4;
+}
+.google-img {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: 0.1rem;
+  background-color: #fff;
+}
+.google-img img {
+  width: 100%;
+}
+.btn-text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(159, 159, 159, 0.6);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(159, 159, 159, 0.6);
+  box-shadow: rgba(159, 159, 159, 0.6);
+}

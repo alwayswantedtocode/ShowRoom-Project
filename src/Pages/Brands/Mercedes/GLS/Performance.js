@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/BENZ/GLS-SUV/2023-AMG-GLS-SUV-HERO-DR
 import secondImage from "../../../../Images/BENZ/GLS-SUV/2022-GLS-SUV-GAL-007-F-TE-FE-DR.jpg";
 import thirdImage from "../../../../Images/BENZ/GLS-SUV/19C0481_011.jpg";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

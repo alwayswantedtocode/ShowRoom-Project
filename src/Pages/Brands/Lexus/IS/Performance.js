@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/LEXUS/IS/masthead-d.jpg";
 import secondImage from "../../../../Images/LEXUS/IS/2022-lexus-is-500-v8-blue-07_header.jpg";
 import thirdImage from "../../../../Images/LEXUS/IS/LEX-ISF-MY23-0040_tanhxq.png";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

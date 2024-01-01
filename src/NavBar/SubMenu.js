@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, } from "react";
-import { useGlobalContext } from "../GlobalContext";
+import React, { useEffect, useRef } from "react";
+import { useGlobalContext } from "../Global Conext/GlobalContext";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 

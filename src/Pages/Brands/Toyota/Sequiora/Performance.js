@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/TOYOTAL/SEQUOIA/2023_Sequoia_SR5_TRDS
 import secondImage from "../../../../Images/TOYOTAL/SEQUOIA/TUN_MY22_0069_V002_ultnzSmZcnrladOIK8uqMDzX16mxQ.webp";
 import thirdImage from "../../../../Images/TOYOTAL/SEQUOIA/SEQ_MY23_0022_V001_F_jL1OleDS7tRHhg9XJ.png";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

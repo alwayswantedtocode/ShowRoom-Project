@@ -2,7 +2,7 @@ import React from "react";
 import headlamp from "../../../../../Images/BENZ/GLS-SUV/INTERIOR/2023-GLS-SUV-MP-038.webp";
 import interior from "../../../../../Images/BENZ/GLS-SUV/INTERIOR/2023-GLS-SUV-MP-162.webp";
 import kicksensor from "../../../../../Images/BENZ/GLS-SUV/INTERIOR/2023-GLS-SUV-MP-043.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

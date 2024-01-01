@@ -2,7 +2,7 @@ import React from "react";
 import steering from "../../../../../Images/BENZ/EQB-SUV/INTERIOR/2022-EQB-SUV-GAL-027-XL.jpg";
 import futuristic from "../../../../../Images/BENZ/EQB-SUV/INTERIOR/585634-mercedes-benz-eqb-2024-deja-plusieurs-changements.jpeg";
 import panorama from "../../../../../Images/BENZ/EQB-SUV/2022-EQB-SUV-2.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

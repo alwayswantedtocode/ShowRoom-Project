@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import ColdWeather from "../../../../Images/TOYOTAL/camry/interior/CAM_MY21_0034_V001.png";
 import SmartKey from "../../../../Images/TOYOTAL/camry/interior/2023-toyota-camry-infotainment-system-carbuzz-854644-1600.png";
 import Roofline from "../../../../Images/TOYOTAL/camry/CAH_MY22_0003_V001-3.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

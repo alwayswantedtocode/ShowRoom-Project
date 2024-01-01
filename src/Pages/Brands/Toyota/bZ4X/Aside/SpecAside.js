@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/TOYOTAL/bZ4X/interior/BZ4_MY23_0043_V004.jpg";
 import fifthImage from "../../../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0058_V001.webp";
 import sixthImage from "../../../../../Images/TOYOTAL/bZ4X/interior/BZ4_MY23_0040_V001.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/LEXUS/RX-350-HYBRID/Lexus-RX-Performa
 import secondImage from "../../../../Images/LEXUS/RX-350-HYBRID/Lexus-RX-Performance-PHEV-desktop-1440x490-LEX-RXH-MY24-0028.webp";
 import thirdImage from "../../../../Images/LEXUS/RX-350-HYBRID/Lexus-RX-Performance-powertrains-desktop-1440x490-LEX-FLN-MY23-0004.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

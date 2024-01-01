@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import FSPORT from "../../../../Images/LEXUS/RX-350-HYBRID/Lexus-RX-Design-FSPORTstyle.png";
 import FOCUSED from "../../../../Images/LEXUS/RX-350-HYBRID/Interior/Lexus-RX-Design-cockpit.png";
 import DESIGN from "../../../../Images/LEXUS/RX-350-HYBRID/Lexus-RX-Design.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

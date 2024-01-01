@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/TOYOTAL/VENZA-HYBRID/VEN_MY22_0006_V0
 import secondImage from "../../../../Images/TOYOTAL/VENZA-HYBRID/VEN_MY22_0015_V001.png";
 import thirdImage from "../../../../Images/TOYOTAL/VENZA-HYBRID/VEN_MY23_0038_V001.png";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

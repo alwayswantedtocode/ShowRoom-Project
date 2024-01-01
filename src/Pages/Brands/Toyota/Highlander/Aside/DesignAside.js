@@ -2,7 +2,7 @@ import React from "react";
 import SEATING from "../../../../../Images/TOYOTAL/HIGHLANDER/INTERIOR/HLH_MY22_0009_V001.png";
 import Exhaust from "../../../../../Images/TOYOTAL/HIGHLANDER/HLD_MY23_0004_V001.png";
 import BRONZE from "../../../../../Images/TOYOTAL/HIGHLANDER/HLD_MY23_0003_V001.png";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

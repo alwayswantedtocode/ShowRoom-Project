@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import Pureluxury from "../../../../Images/BENZ/EQS-SUV/Interior/MBCAN-2023-EQS-SUV-HWL-2-2-01-XL.png";
 import space from "../../../../Images/BENZ/EQS-SUV/2023-EQS-SUV-Gallery_035-XL.jpg";
 import surroundingsound from "../../../../Images/BENZ/EQS-SUV/Interior/2023-EQS-SUV-Gallery_031-XL.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

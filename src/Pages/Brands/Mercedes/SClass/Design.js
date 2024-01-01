@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import exteriorlighting from "../../../../Images/BENZ/S-Class-Sedan/2023-S-SEDAN-MP-021.png";
 import interiorlighting from "../../../../Images/BENZ/S-Class-Sedan/INTERIOR/2023-S-SEDAN-MP-022.png";
 import night from "../../../../Images/BENZ/S-Class-Sedan/2023-S-SEDAN-MP-020.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

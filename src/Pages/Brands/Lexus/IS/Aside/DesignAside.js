@@ -2,7 +2,7 @@ import React from "react";
 import BBSWHEELS from "../../../../../Images/LEXUS/IS/Lexus-IS-19instaggeredwidth-matteblack-bbs-wheels-moredesign-tile-550x411-LEX-ISG-MY21-0099-03.webp";
 import QUADEXHAUST from "../../../../../Images/LEXUS/IS/IS-gallery-15-desktop.webp";
 import EXTRIORSTYLING from "../../../../../Images/LEXUS/IS/2022-lexus-is-500-v8-blue-07_header.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

@@ -33,15 +33,14 @@ const FirthSlide = () => {
         <h3 className="brand-type">Toyota Crown</h3>
         <p className="chasephrase">Innovation dialed up.</p>
       </div>
-      <div className="more-info-container">
-        <div className="more-info">
-          {" "}
-          <NavLink to="Toyota/Sedan/Crown">Learn More</NavLink>
+      <NavLink to="Toyota/Sedan/Crown">
+        <div className="more-info-container">
+          <div className="more-info"> Learn More</div>
+          <div className="nav-arrow">
+            <BiChevronRight />
+          </div>
         </div>
-        <div className="nav-arrow">
-          <BiChevronRight />
-        </div>
-      </div>
+      </NavLink>
     </div>
   );
 };

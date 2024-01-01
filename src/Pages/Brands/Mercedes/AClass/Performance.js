@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/BENZ/A-Class-Sedan/236.jpg";
 import secondImage from "../../../../Images/BENZ/A-Class-Sedan/INTERIOR/2022-A-SEDAN-MP-002.webp";
 import thirdImage from "../../../../Images/BENZ/A-Class-Sedan/2022-A-SEDAN-MP-004.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

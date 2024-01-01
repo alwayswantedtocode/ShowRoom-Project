@@ -2,7 +2,7 @@ import React from "react";
 import AMBIENT from "../../../../../Images/LEXUS/RX-350-HYBRID/Interior/Lexus-RX-MoreDesign-Illumination-550x411-LEX-RXG-MY23-0056.webp";
 import PANORAMA from "../../../../../Images/LEXUS/RX-350-HYBRID/Interior/Lexus-RX-MoreDesign-PanoramaRoof-550x411-LEX-RXB-MY23-0007.webp";
 import SENSOR from "../../../../../Images/LEXUS/RX-350-HYBRID/Lexus-RX-MoreDesign-KickSensor-550x411-LEX-RXF-MY23-0018.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

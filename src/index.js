@@ -5,7 +5,10 @@ import "./Footer/footer.css";
 
 // import "./Pages/Brands/BrandPages.css";
 import App from "./APP/App";
-import { AppProvider } from "./GlobalContext";
+import { AppProvider } from "./Global Conext/GlobalContext";
+// import dotenv from "dotenv";
+
+// dotenv.config();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

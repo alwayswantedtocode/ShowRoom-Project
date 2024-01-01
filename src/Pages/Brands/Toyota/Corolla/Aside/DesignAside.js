@@ -2,7 +2,7 @@ import React from "react";
 import headlamp from "../../../../../Images/TOYOTAL/corolla/COR_MY20_0028_V01.png";
 import Moonroof from "../../../../../Images/TOYOTAL/corolla/interior/COR_MY23_0039_V001_GvFlY4EQiPdYze9.png";
 import PianoBlack from "../../../../../Images/TOYOTAL/corolla/interior/COR_MY23_0011_V001_ny6jnixSqA7xHltFd.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import Premium from "../../../../Images/TOYOTAL/bZ4X/interior/BZ4_MY23_0019_V008_KD8K9F_e_pNqdMR_.png";
 import Striking from "../../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0030_V001_v2.png";
 import Aerodynamic from "../../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0035_V001.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

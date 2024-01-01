@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/LEXUS/LS/lexus-mlp-ls-gallery-ext-01-
 import secondImage from "../../../../Images/LEXUS/LS/d7.jpg";
 import thirdImage from "../../../../Images/LEXUS/LS/dxp-2022-lexus-ls-gallery-01-1920x1080.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();
@@ -67,7 +67,7 @@ const Performance = () => {
         </div>
       </div>
       <div className="Click-showmore" onClick={() => setShowMore(!showMore)}>
-        MORE 
+        MORE
         <button className="Click-showmore-btn">
           {showMore ? <FaChevronUp /> : <FaChevronDown />}
         </button>

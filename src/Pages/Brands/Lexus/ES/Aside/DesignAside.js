@@ -2,7 +2,7 @@ import React from "react";
 import headlamp from "../../../../../Images/LEXUS/ES/2022_lexus_es_33_1600x1200.jpg";
 import interior from "../../../../../Images/LEXUS/ES/Interior/lexus-2024-es-350-fsport-circuit-red-hadori-aluminum-trim-l.jpg";
 import kicksensor from "../../../../../Images/LEXUS/ES/Interior/385dd7de_360e_4955_b257_62827edbb02c_e98151ef4a.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

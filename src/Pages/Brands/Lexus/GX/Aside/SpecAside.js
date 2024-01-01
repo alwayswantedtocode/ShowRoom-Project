@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/LEXUS/GX/Lexus-GX-V18Power-performance.webp";
 import fifthImage from "../../../../../Images/LEXUS/GX/LEX-GXG-MY20-0072.jpg";
 import sixthImage from "../../../../../Images/LEXUS/GX/Lexus-GX-snow-drift.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

@@ -2,7 +2,7 @@ import React from "react";
 import Taillights from "../../../../../Images/TOYOTAL/camry/CAM_MY21_0008_V001-1.png";
 import Details from "../../../../../Images/TOYOTAL/camry/interior/CAM_MY23_0007_V001_K0TIt5c6W57iZxqOv0nrQ4SQ4r_.png";
 import Style from "../../../../../Images/TOYOTAL/camry/CAM_MY21_0005_V002.png";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

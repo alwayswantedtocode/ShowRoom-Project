@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import Headlights from "../../../../Images/TOYOTAL/SEQUOIA/SEQ_MY23_0028_V001_POmdin55nkdWJnnqHcbJiBFLLg0.png";
 import Ventilated from "../../../../Images/TOYOTAL/SEQUOIA/INTERIOR/2023-toyota-sequoia-dashboard-carbuzz-947047-1600.png";
 import Cabin from "../../../../Images/TOYOTAL/SEQUOIA/SEQ_MY23_0004_V001_gallery_dNT23VP69zrOpJ83iV_aewurk6W.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

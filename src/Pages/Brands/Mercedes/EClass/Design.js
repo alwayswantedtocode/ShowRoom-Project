@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import Sensual from "../../../../Images/BENZ/E-Class-Sedan/INTERIOR/2023-AMG-E-SEDAN-GAL-015-N-FE-DR.png";
 import intelligence from "../../../../Images/BENZ/E-Class-Sedan/mercedes-benz-e-class-2024-16.png";
 import Topstitched from "../../../../Images/BENZ/E-Class-Sedan/INTERIOR/2022-E-SEDAN-GAL-016-P-FI-DR.jpg";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

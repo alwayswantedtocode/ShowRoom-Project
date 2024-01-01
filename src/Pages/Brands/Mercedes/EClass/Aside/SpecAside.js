@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/BENZ/E-Class-Sedan/mercedes-benz-e-class-2024-07.jpg";
 import fifthImage from "../../../../../Images/BENZ/E-Class-Sedan/INTERIOR/2023-E-SEDAN-MP-008.webp";
 import sixthImage from "../../../../../Images/BENZ/E-Class-Sedan/2023-E-SEDAN-MP-018.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

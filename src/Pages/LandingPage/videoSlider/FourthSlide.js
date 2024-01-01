@@ -35,14 +35,14 @@ const FourthSlide = () => {
         <h3 className="maybach-brand-type">GLS SUV</h3>
         <p className="maybach-chasephrase">The value is in the virtues</p>
       </div>
-      <div className="more-info-container">
-        <div className="more-info">
-          <NavLink to="Mercedes/SUV/MayBach">Learn More</NavLink>
+      <NavLink to="Mercedes/SUV/MayBach">
+        <div className="more-info-container">
+          <div className="more-info">Learn More</div>
+          <div className="nav-arrow">
+            <BiChevronRight />
+          </div>
         </div>
-        <div className="nav-arrow">
-          <BiChevronRight />
-        </div>
-      </div>
+      </NavLink>
     </div>
   );
 };

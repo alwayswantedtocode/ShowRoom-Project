@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/LEXUS/UX-HYBRID/Lexus-UXh-best-in-class-performance-thumbnail-desktop-1440x490-LEX-UXH-MY23-0058.webp";
 import fifthImage from "../../../../../Images/LEXUS/UX-HYBRID/c709f795-9b34-4361-8497-b79fa885d022_Lexus_UX_Front_¾_moving.jpg";
 import sixthImage from "../../../../../Images/LEXUS/UX-HYBRID/Interior/Lexus-UX-drive-mode-select-moreperformance-tile-550x411-LEX-UXH-MY23-0067.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

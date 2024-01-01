@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/BENZ/Mercedes-Maybach/Polar White.jpg";
 import fifthImage from "../../../../../Images/BENZ/Mercedes-Maybach/2023-GLS-MAYBACH-SUV-MP-136.webp";
 import sixthImage from "../../../../../Images/BENZ/Mercedes-Maybach/New folder/2023-GLS-MAYBACH-SUV-MP-007.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

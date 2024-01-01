@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import provocativestyle from "../../../../Images/LEXUS/LS/lexus-2023-ls-500-awd-fsport-atomic-silver-talent-l.png";
 import craftmanship from "../../../../Images/LEXUS/LS/INTERIOR/dxp-2022-lexus-ls-gallery-04-1920x1080.png";
 import interior from "../../../../Images/LEXUS/LS/INTERIOR/Lexus-LS-bold-fsport-interior-design-desktop-1440x800-LEX-LSG-MY23-0005.01.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {
@@ -46,7 +46,7 @@ const Design = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [slidecoverHeight, design]);
+  }, [slidecoverHeight, design, ]);
 
   const handleTabClick = (index) => {
     setIsvisible(index);

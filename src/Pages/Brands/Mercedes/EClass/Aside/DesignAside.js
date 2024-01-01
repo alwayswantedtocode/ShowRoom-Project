@@ -2,7 +2,7 @@ import React from "react";
 import headlamp from "../../../../../Images/BENZ/E-Class-Sedan/2023-E-SEDAN-MP-027.webp";
 import Panorama from "../../../../../Images/BENZ/E-Class-Sedan/2023-E-SEDAN-MP-028.webp";
 import wheels from "../../../../../Images/BENZ/E-Class-Sedan/2023-E-SEDAN-MP-035.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

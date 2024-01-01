@@ -2,7 +2,7 @@ import React from "react";
 import taillamp from "../../../../../Images/LEXUS/LX600/2022_LX_Feature-Design_5.jpg";
 import recliningseat from "../../../../../Images/LEXUS/LX600/INTERIOR/lx-600-vip-comfort-reimagined-vip-seating.jpg";
 import ambient from "../../../../../Images/LEXUS/LX600/INTERIOR/lx-600-urban-comfort-ambient-illumination.jpg";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

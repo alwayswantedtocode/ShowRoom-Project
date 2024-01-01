@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/TOYOTAL/corolla/Corolla-6.png";
 import secondImage from "../../../../Images/TOYOTAL/corolla/interior/COR_MY20_0038_V001_CjQd1r9Kal1z8An.webp";
 import thirdImage from "../../../../Images/TOYOTAL/corolla/interior/COR_MY24_0003_V001_nU1X8cSeZ_wq6UbVNV4XF3bHc.png";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

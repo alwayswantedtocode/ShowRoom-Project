@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/LEXUS/GX/Lexus-GX-SuspensionSystemDes
 import secondImage from "../../../../Images/LEXUS/GX/Lexus-GX-OffRoadCapabilityDesktop-Preformance.jpg";
 import thirdImage from "../../../../Images/LEXUS/GX/overland-suv-of-the-year-lexus.jpg";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/LEXUS/LS/LEX-LSG-MY21-0059.webp";
 import fifthImage from "../../../../../Images/LEXUS/LS/INTERIOR/2018-lexus-ls-gallery-interior-003-1920x1080tcm-3154-1191225.webp";
 import sixthImage from "../../../../../Images/LEXUS/LS/INTERIOR/lexus-LS500-features-perf-drive-mode.jpg"; 
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

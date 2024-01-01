@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import dramaticstyling from "../../../../Images/LEXUS/IS/Lexus-IS-dramatic-styling-design-desktop-1440x800-LEX-ISF-MY23-0041.png";
 import cockpit from "../../../../Images/LEXUS/IS/INTERIOR/2021_Lexus_IS_F-SPORT_028.png";
 import FSPORT from "../../../../Images/LEXUS/IS/Lexus-IS-design-fsport-performance-style-desktop-1440x800-LEX-ISF-MY23-0027.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

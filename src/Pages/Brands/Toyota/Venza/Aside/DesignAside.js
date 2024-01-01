@@ -2,7 +2,7 @@ import React from "react";
 import Stitching from "../../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/VEN_MY21_0003_V001.png";
 import Seats from "../../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/VEN_MY21_0022_V001.png";
 import Wheels from "../../../../../Images/TOYOTAL/VENZA-HYBRID/VEN_MY21_0005_V003.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

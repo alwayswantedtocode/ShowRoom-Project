@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/LEXUS/ES/Lexus-ES-performance-fsport-
 import secondImage from "../../../../Images/LEXUS/ES/Lexus-ES-allwheeldrive-thumbnail-desktop-1440x490-LEX-ESG-MY22-0079.webp";
 import thirdImage from "../../../../Images/LEXUS/ES/Lexus-ES-exceptionalmpg-thumbnail-desktop-1440x490-LEX-ESH-MY23-0014.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

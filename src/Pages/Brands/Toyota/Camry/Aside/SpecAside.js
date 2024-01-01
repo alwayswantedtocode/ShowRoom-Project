@@ -2,7 +2,7 @@ import React from "react";
 import fourthImage from "../../../../../Images/TOYOTAL/camry/CAM_MY21_0185_V001-2.png";
 import fifthImage from "../../../../../Images/TOYOTAL/camry/interior/CAM_MY21_0186_V001.png";
 import sixthImage from "../../../../../Images/TOYOTAL/camry/interior/CAM_MY18_0054_V001_wFwn93x6xPMT4Cr9wpis3Q9qGl.webp"; 
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const SpecAside = () => {
   const { showMore } = useGlobalContext();

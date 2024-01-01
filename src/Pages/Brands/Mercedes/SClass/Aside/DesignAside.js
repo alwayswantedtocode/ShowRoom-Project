@@ -2,7 +2,7 @@ import React from "react";
 import Metallic from "../../../../../Images/BENZ/S-Class-Sedan/INTERIOR/2023-S-SEDAN-MP-039.webp";
 import floor from "../../../../../Images/BENZ/S-Class-Sedan/INTERIOR/2023-S-SEDAN-MP-040.webp";
 import Nappa from "../../../../../Images/BENZ/S-Class-Sedan/INTERIOR/2023-S-SEDAN-MP-042.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

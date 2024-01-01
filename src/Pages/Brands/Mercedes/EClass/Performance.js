@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/BENZ/E-Class-Sedan/mercedes-benz-e-cl
 import secondImage from "../../../../Images/BENZ/E-Class-Sedan/INTERIOR/2023-E-SEDAN-MP-005.webp";
 import thirdImage from "../../../../Images/BENZ/E-Class-Sedan/2023-E-SEDAN-MP-006.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

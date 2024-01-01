@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import firstclass from "../../../../Images/BENZ/GLS-SUV/2022-GLS-SUV-GAL-010-C-TI-FI-DR.png";
 import cockpit from "../../../../Images/BENZ/GLS-SUV/INTERIOR/2022-GLS-SUV-GAL-012-C-FI-DR.png";
 import roll from "../../../../Images/BENZ/GLS-SUV/568200-the-2024-mercedes-benz-gls-gets-refreshed-with-several-updates.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

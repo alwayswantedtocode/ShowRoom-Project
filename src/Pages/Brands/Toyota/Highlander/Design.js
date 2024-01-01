@@ -4,7 +4,7 @@ import design from "./Data/ModelData";
 import CargoArea from "../../../../Images/TOYOTAL/HIGHLANDER/INTERIOR/HLH_MY20_0029_V001.png";
 import Exterior from "../../../../Images/TOYOTAL/HIGHLANDER/MUL_MY23_0011_V001.png";
 import DRIVER from "../../../../Images/TOYOTAL/HIGHLANDER/INTERIOR/HLH_MY23_0009_V001.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

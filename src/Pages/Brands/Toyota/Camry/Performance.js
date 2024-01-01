@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/TOYOTAL/camry/CAM_MY18_0035_V006-3.pn
 import secondImage from "../../../../Images/TOYOTAL/camry/CAM_MY18_0036_V002_2BECI69ymKdBNqBcQ3_i.webp";
 import thirdImage from "../../../../Images/TOYOTAL/camry/CAH_MY22_0004_V001.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

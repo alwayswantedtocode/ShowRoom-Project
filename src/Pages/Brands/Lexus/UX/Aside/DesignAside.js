@@ -2,7 +2,7 @@ import React from "react";
 import taillamp from "../../../../../Images/LEXUS/UX-HYBRID/Lexus-UXh-gallery-desktop-1440x811-LEX-UXH-MY23-0068.png";
 import KICKSENSOR from "../../../../../Images/LEXUS/UX-HYBRID/Lexus-UXh-power-rear-door-moredesign-tile-550x411-LEX-UXH-MY23-0080.webp";
 import SEATING from "../../../../../Images/LEXUS/UX-HYBRID/Interior/Lexus-UXh-heated-ventilated-tile-550x411-LEX-UXG-MY23-0006.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

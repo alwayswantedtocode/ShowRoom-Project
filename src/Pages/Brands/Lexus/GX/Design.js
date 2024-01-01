@@ -4,7 +4,7 @@ import design from "./Data/ModelData";
 import comfort from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-UltimateComfort-Design-1440x811-LEX-GXG-MY22-0052.jpg";
 import tempcontrol from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-PersonalizedTemperature-Design-1440x800-LEX-GXG-MY22-0006-05.jpg";
 import heatedsteering from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-13-Gallery-1440x811-LEX-GXG-MY22-0070.jpg";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import kicksensor from "../../../../../Images/LEXUS/LS/Whats_App_Image_2022_08_22_at_15_29_14_3_dc9c165384.jpeg";
 import platedtrim from "../../../../../Images/LEXUS/LS/INTERIOR/lexus-2023-ls-500-awd-luxury-black-cut-glass-trim-l.jpg";
 import massage from "../../../../../Images/LEXUS/LS/INTERIOR/Lexus-LS-massaging-seats-moredesign-tile-550x411-LEX-LSG-MY23-0002.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

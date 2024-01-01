@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/LEXUS/UX-HYBRID/Leuxs-UXh-class-leadi
 import secondImage from "../../../../Images/LEXUS/UX-HYBRID/Interior/Lexus-UXh-first-predictive-efficient-moreperformance-tile-550x411-LEX-UXH-MY23-0005.webp";
 import thirdImage from "../../../../Images/LEXUS/UX-HYBRID/Lexus-UXh-nimble-handling-performance-thumbnail-desktop-1440x490-LEX-UXS-MY23-0001.webp";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();

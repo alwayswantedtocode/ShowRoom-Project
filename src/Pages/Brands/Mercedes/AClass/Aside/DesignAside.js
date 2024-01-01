@@ -2,7 +2,7 @@ import React from "react";
 import Panorama from "../../../../../Images/BENZ/A-Class-Sedan/2022-A-SEDAN-MP-016.webp";
 import styling from "../../../../../Images/BENZ/A-Class-Sedan/2022-A-SEDAN-MP-017.webp";
 import steering from "../../../../../Images/BENZ/A-Class-Sedan/INTERIOR/2022-A-SEDAN-MP-026.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

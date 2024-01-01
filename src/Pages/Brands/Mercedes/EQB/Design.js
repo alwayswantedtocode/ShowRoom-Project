@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import Wireless from "../../../../Images/BENZ/EQB-SUV/INTERIOR/asset.MQ6.0.20211110132123.jpg";
 import electricmotoring from "../../../../Images/BENZ/EQB-SUV/INTERIOR/2022-EQB-SUV-GAL-020-XL.jpg";
 import foldflat from "../../../../Images/BENZ/EQB-SUV/INTERIOR/2023-mercedes-benz-eqb-suv-seat-folded-carbuzz-834602.jpg";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

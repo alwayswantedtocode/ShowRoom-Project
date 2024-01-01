@@ -3,7 +3,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import bespoke from "../../../../Images/BENZ/Mercedes-Maybach/New folder/2022-GLS-MAYBACH-SUV-GAL-013-Q-FI-DR.png";
 import Sensations from "../../../../Images/BENZ/Mercedes-Maybach/New folder/maybach-design-slideshow-1.png";
 import Bountiful from "../../../../Images/BENZ/Mercedes-Maybach/New folder/maybach-design-slideshow-4.png";
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DesignAside from "./Aside/DesignAside";
 const Design = () => {

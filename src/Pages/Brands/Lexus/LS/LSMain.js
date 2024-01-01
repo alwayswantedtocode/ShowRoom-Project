@@ -15,6 +15,7 @@ import Gallery from "./Gallery";
 import "../Lexus.css";
 
 const Main = () => {
+
    useEffect(() => {
      // Scroll to the top of the page when the component is mounted
      window.scrollTo(0, 0);

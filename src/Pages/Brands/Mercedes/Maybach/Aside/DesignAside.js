@@ -2,7 +2,7 @@ import React from "react";
 import Burmester from "../../../../../Images/BENZ/Mercedes-Maybach/New folder/3x4_Maybach-GLS_Detail1.jpeg";
 import recliningseat from "../../../../../Images/BENZ/Mercedes-Maybach/New folder/2022-GLS-MAYBACH-SUV-GAL-010-Q-FI-DR.jpg";
 import ambient from "../../../../../Images/BENZ/Mercedes-Maybach/New folder/2024-MAYBACH-GLS-SUV-FMG-011-DR.webp";
-import { useGlobalContext } from "../../../../../GlobalContext";
+import { useGlobalContext } from "../../../../../Global Conext/GlobalContext";
 
 const DesignAside = () => {
   const design = [

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useGlobalContext } from "../GlobalContext";
+import { useGlobalContext } from "../Global Conext/GlobalContext";
 import { FaTimes } from "react-icons/fa";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import SubMenuLinks from "./NavbarData";

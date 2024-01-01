@@ -5,7 +5,7 @@ import firstImage from "../../../../Images/BENZ/EQB-SUV/MBCAN-2023-EQB-SUV-HWL-3
 import secondImage from "../../../../Images/BENZ/EQB-SUV/mercedes-benz-eqb-350-5-jpg-641dcef97342c.jpg";
 import thirdImage from "../../../../Images/BENZ/EQB-SUV/EQB2充电3296x1620.jpg";
 
-import { useGlobalContext } from "../../../../GlobalContext";
+import { useGlobalContext } from "../../../../Global Conext/GlobalContext";
 
 const Performance = () => {
   const { showMore, setShowMore } = useGlobalContext();
