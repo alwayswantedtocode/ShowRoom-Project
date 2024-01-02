@@ -4,7 +4,7 @@ import VideoSlide from "./videoSlider/VideoSlide";
 import VehiclesSlide from "./newVehicles/VehiclesSlide";
 import VehicleDisplay from "./ShowRoom/VehicleDisplay";
 import Electrified from "./Electrified/Electrified";
-import { auth, onAuthStateChanged } from "../UserAuthentication/Firebase";
+import { auth, onAuthStateChanged } from "../../Firebase";
 import { useGlobalContext } from "../../Global Conext/GlobalContext";
 
 

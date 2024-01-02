@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../Global Conext/AuthenticationContext";
-import { auth, onAuthStateChanged } from "./Firebase";
+import { auth, onAuthStateChanged } from "../../Firebase";
 import googleImg from "../../Images/google-svgrepo-com.svg";
 import "./Auth.css";
 
