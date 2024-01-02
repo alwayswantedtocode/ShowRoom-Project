@@ -12,7 +12,14 @@ import { useNavigate } from "react-router-dom";
 import AccDropDown from "./AccDropDown";
 
 const NavBar = () => {
-  const { openMobileMenu, openSubMenu, isSubMenuOpen,showAside, setShowAside } = useGlobalContext();
+  const {
+    openMobileMenu,
+    openSubMenu,
+    isSubMenuOpen,
+    showAside,
+    setShowAside,
+    AccountRef,
+  } = useGlobalContext();
   const { user, handleSignOut } = useAuthContext();
   //User uid from firebase
   const userId = user?.uid;
@@ -65,21 +72,7 @@ const NavBar = () => {
     setShowAside(!showAside);
   };
 
-  // Click in anywhere to remove Account dropdown//
-  const AccountRef = useRef();
 
-  const handleAccount = (event) => {
-    if (!AccountRef.current.contains(event.target)) {
-      setShowAside(showAside);
-    }
-  };
-  useEffect(() => {
-    document.addEventListener("mousedown", handleAccount);
-
-    return () => {
-      document.removeEventListener("mousedown", handleAccount);
-    };
-  }, [handleAccount]);
 
   return (
     <header>
@@ -148,7 +141,6 @@ const NavBar = () => {
         >
           <SubMenu className="mouseover" />
         </aside>
-       
       </nav>
     </header>
   );

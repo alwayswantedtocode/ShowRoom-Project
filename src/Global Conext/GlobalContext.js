@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useRef, } from "react";
 import SubMenuLinks from "../NavBar/NavbarData";
 
 
@@ -42,6 +42,8 @@ export const AppProvider = ({ children }) => {
 // Account dropdown details state
 const [showAside, setShowAside] = useState(false);
 
+  const AccountRef = useRef();
+
 
   return (
     <GlobalContext.Provider
@@ -60,6 +62,7 @@ const [showAside, setShowAside] = useState(false);
         setShowMore1,
         showAside,
         setShowAside,
+        AccountRef,
       }}
     >
       {children}

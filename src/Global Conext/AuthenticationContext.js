@@ -22,11 +22,12 @@ import {
   GoogleAuthProvider,
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { useGlobalContext } from "./GlobalContext";
 
 const AuthContext = React.createContext();
 
 export const AuthProvider = ({ children }) => {
-  // SignIn
+  const{showAside, setShowAside}=useGlobalContext()
 
   const collectionUserRef = collection(db, "user");
 
@@ -139,7 +140,7 @@ export const AuthProvider = ({ children }) => {
 
   const SignOutUser = async () => {
     await signOut(auth);
-    console.log("signed out");
+    setShowAside(!showAside);
   };
 
   return (

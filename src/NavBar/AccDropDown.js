@@ -13,22 +13,18 @@ const AccDropDown = () => {
   return (
     <div className="User">
       <div className="User-content">
-        <div className="User-Account">
+        <div className="User-Image">
           <FaUserCircle />
         </div>
         <div className="User-details">
-          <span className="displayName">
+          <div className="displayName">
             <h5>Logged in as:</h5>
-            {/* <p>
-              {user?.displayName === null && userData?.name !== undefined
-                ? userData?.name
-                : user?.displayName}
-            </p> */}
-            <p>{user && user?.displayName}</p>
-          </span>
-          <span>
+
+            <p style={{border:"2px solid brown"}}>{user && user?.displayName}</p>
+          </div>
+          <div className="displayEmail">
             <p>{user && user?.email}</p>
-          </span>
+          </div>
 
           {/* <p>{user?.email}</p> */}
         </div>
