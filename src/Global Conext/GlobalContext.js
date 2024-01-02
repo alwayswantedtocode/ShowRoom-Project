@@ -39,7 +39,8 @@ export const AppProvider = ({ children }) => {
     // window.scrollTo(0, 0); // set pageYOffset to zero
   };
 
-  // // SignIn
+// Account dropdown details state
+const [showAside, setShowAside] = useState(false);
 
 
   return (
@@ -57,11 +58,8 @@ export const AppProvider = ({ children }) => {
         setShowMore,
         showMore1,
         setShowMore1,
-        // SignInWithGoogle,
-        // signInHandleSubmit,
-        // signUpHandleSubmit,
-        // user,
-        // setUser,
+        showAside,
+        setShowAside,
       }}
     >
       {children}

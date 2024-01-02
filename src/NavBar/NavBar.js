@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 import AccDropDown from "./AccDropDown";
 
 const NavBar = () => {
-  const { openMobileMenu, openSubMenu, isSubMenuOpen } = useGlobalContext();
+  const { openMobileMenu, openSubMenu, isSubMenuOpen,showAside, setShowAside } = useGlobalContext();
   const { user, handleSignOut } = useAuthContext();
   //User uid from firebase
   const userId = user?.uid;
@@ -43,8 +43,6 @@ const NavBar = () => {
   };
 
   //Account functions
-  const [showAside, setShowAside] = useState(false);
-
   const handleAccountIcon = () => {
     const clickOnIcon = showAside;
 
@@ -140,6 +138,7 @@ const NavBar = () => {
             </button> */}
           </div>
         </div>
+        {/* Dropdown brand menu */}
         <aside
           className={
             isSubMenuOpen
@@ -149,21 +148,7 @@ const NavBar = () => {
         >
           <SubMenu className="mouseover" />
         </aside>
-
-        {/* <aside style={{position:"absolute"}}>
-          <Account showAside={showAside} setShowAside={setShowAside} />
-        </aside> */}
-        <aside
-          className={`${
-            showAside ? dropdownaside active : dropdownaside
-          }`}
-          id="dropdown"
-          style={{
-            transform: showAside ? "translateY(0)" : "translateY(-30rem)",
-          }}
-        >
-          <AccDropDown />
-        </aside>
+       
       </nav>
     </header>
   );

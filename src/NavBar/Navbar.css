@@ -287,14 +287,13 @@ header {
   font-weight: 600;
   line-height: 120%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   margin: 0 1rem;
   max-height: 58px;
   gap: 15px;
-
   border: 2px solid rgb(0, 255, 21);
-  width: max-content;
+  width: 50%;
   /* Inside auto layout */
   flex: none;
   order: 1;
@@ -314,7 +313,9 @@ header {
 }
 @media screen and (min-width: 912px) {
   .search-links-account-container {
+    width: max-content;
     flex-direction: row-reverse;
+    align-items: center;
   }
   .navLinkContainer {
     /* font-family: "Alegreya", serif;
@@ -390,7 +391,9 @@ Account css
     /* border: 2px solid blue; */
     border-radius: 50%;
     font-size: 2rem;
-    background-image: url("https://www.svgrepo.com/show/343494/profile-user-account.svg");
+    /* background-image: url("https://www.svgrepo.com/show/343494/profile-user-account.svg"); */
+    cursor: pointer;
+
   }
   .dropdownaside {
     display: flex;
@@ -415,7 +418,6 @@ Account css
     transform: translateY(0);
     z-index: 9;
   }
-
   .User {
     display: flex;
     flex-wrap: wrap;
@@ -428,7 +430,6 @@ Account css
     align-items: center;
     justify-content: center;
     gap: 5px;
-    border-radius: 2px solid red;
     padding: 0.2rem 0.2rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid rgb(184, 184, 184);
@@ -450,6 +451,8 @@ Account css
     /* align-items: center; */
     flex-direction: column;
     justify-content: center;
+    border: 2px solid red;
+    
   }
   .displayName {
     display: flex;
@@ -477,6 +480,23 @@ Account css
     background-color: #dedede;
     border-radius: 0.5rem;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 911px) {
+     .User-details {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+    
+  }
+
+    .dropdownaside.active {
+      visibility: visible;
+      transform: translateY(0);
+      z-index: 9;
+    }
   }
 }
 
