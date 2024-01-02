@@ -104,7 +104,7 @@ const NavBar = () => {
               </NavLink>
             </div>
 
-            <div className="account-container" style={{ background: "red" }}>
+            <div className="account-container">
               {userId ? (
                 <div
                   className="User-Icon"

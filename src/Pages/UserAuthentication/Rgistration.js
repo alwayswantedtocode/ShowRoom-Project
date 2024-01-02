@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth, db, onAuthStateChanged } from "./Firebase";
+// import { auth, db, onAuthStateChanged } from "./Firebase";
+import { auth, db, onAuthStateChanged } from "../../Firebase"
 import "./Auth.css"
 import { NavLink, useNavigate } from "react-router-dom";
 import { HiCheckCircle, HiXCircle } from "react-icons/hi";

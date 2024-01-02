@@ -1,9 +1,14 @@
 import React, { useContext, useState, useEffect } from "react";
+// import {
+//   auth,
+//   db,
+//   onAuthStateChanged,
+// } from "../Pages/UserAuthentication/Firebase";
 import {
   auth,
   db,
   onAuthStateChanged,
-} from "../Pages/UserAuthentication/Firebase";
+} from "../Firebase"
 import {
   collection,
   addDoc,
@@ -140,7 +145,7 @@ export const AuthProvider = ({ children }) => {
 
   const SignOutUser = async () => {
     await signOut(auth);
-    setShowAside(!showAside);
+    setShowAside(false);
   };
 
   return (
