@@ -9,7 +9,7 @@ Registration design
   justify-content: center;
   width: 100%;
   height: max-content;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .Card {
   width: max-content;
@@ -19,7 +19,7 @@ Registration design
   flex: 2;
   padding: 50px;
   gap: 30px;
-   border: 2px solid blue;
+   /* border: 2px solid blue; */
 }
 .Card h1 {
   color: #ff7917;

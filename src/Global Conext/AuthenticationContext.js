@@ -44,9 +44,9 @@ export const AuthProvider = ({ children }) => {
     try {
       const popup = await signInWithPopup(auth, provider);
       const user = popup.user;
-      const Query = query(collectionUserRef, where("uid", "===", user.uid));
+      const Query = query(collectionUserRef, where("uid", "==", user.uid));
       const docs = await getDocs(Query);
-      if (docs.docs.legnth === 0) {
+      if (docs.docs.length === 0) {
         await addDoc(collectionUserRef, {
           uid: user?.uid,
           name: user?.displayName,
