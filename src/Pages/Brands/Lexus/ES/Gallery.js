@@ -8,19 +8,6 @@ const Gallery = () => {
   const slideRef = useRef();
   let slidewidth = slideRef.current?.clientWidth;
 
-  //  const slideLeft = () => {
-  //    let last = images.slice(-1);
-  //    let rest = images.slice(0, -1);
-  //    let newImages = [last, ...rest];
-  //    setImages(newImages);
-  //  };
-
-  //  const slideRight = () => {
-  //    const [first, ...rest] = images;
-  //    const newImages = [...rest, first];
-  //    setImages(newImages);
-  //  };
-
   const slideLeft = () => {
     const newImages = [...images];
     const last = newImages.pop();

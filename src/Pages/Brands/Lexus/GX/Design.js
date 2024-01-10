@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
-import design from "./Data/ModelData";
+
 // Design
 import comfort from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-UltimateComfort-Design-1440x811-LEX-GXG-MY22-0052.jpg";
 import tempcontrol from "../../../../Images/LEXUS/GX/INTERIOR/Lexus-GX-PersonalizedTemperature-Design-1440x800-LEX-GXG-MY22-0006-05.jpg";

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // Design
 import provocativestyle from "../../../../Images/LEXUS/LS/lexus-2023-ls-500-awd-fsport-atomic-silver-talent-l.png";
 import craftmanship from "../../../../Images/LEXUS/LS/INTERIOR/dxp-2022-lexus-ls-gallery-04-1920x1080.png";

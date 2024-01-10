@@ -1,15 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../NavBar/Logo";
-import { FaSearch, FaBars } from "react-icons/fa";
+
 import { useGlobalContext } from "../Global Conext/GlobalContext";
 import { useAuthContext } from "../Global Conext/AuthenticationContext";
 import SubMenu from "./SubMenu";
 import "./Navbar.css";
-import { FaUserCircle } from "react-icons/fa";
-import Account from "./Account";
-import { useNavigate } from "react-router-dom";
-import AccDropDown from "./AccDropDown";
+import { FaBars, FaUserCircle } from "react-icons/fa";
+
 
 const NavBar = () => {
   const {
@@ -20,7 +18,7 @@ const NavBar = () => {
     setShowAside,
     AccountRef,
   } = useGlobalContext();
-  const { user, handleSignOut } = useAuthContext();
+  const { user } = useAuthContext();
   //User uid from firebase
   const userId = user?.uid;
 
@@ -83,7 +81,7 @@ const NavBar = () => {
       >
         <div className="NavContainer">
           <button className="toggle-Menubar" onClick={openMobileMenu}>
-            <FaBars />
+            <FaBars/>
           </button>
           <div className="navLogo">
             <NavLink to="/">

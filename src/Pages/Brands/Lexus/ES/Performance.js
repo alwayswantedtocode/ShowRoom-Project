@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SpecAside from "./Aside/SpecAside";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import firstImage from "../../../../Images/LEXUS/ES/Lexus-ES-performance-fsport-tuned-suspension-desktop-1440x490-LEX-ESG-MY22-0001.webp";

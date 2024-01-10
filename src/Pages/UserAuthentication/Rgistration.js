@@ -22,7 +22,8 @@ const EMAIL_REGX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 //
 
 const Rgistration = () => {
-  const { signUpHandleSubmit, SignInWithGoogle } = useAuthContext();
+  const { signUpHandleSubmit, SignInWithGoogle, loading, setLoading } =
+    useAuthContext();
 
   const userRefFocus = useRef();
   const errorRefAlert = useRef();
@@ -55,7 +56,7 @@ const Rgistration = () => {
   //On logiN
   const [errorMsg, setErrorMsg] = useState("");
   // const [success, setSuccess] = useState(false);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     userRefFocus.current.focus();
@@ -135,6 +136,8 @@ const Rgistration = () => {
 
 
   return (
+  
+    
     <section className="Register-card">
       <p
         className={errorMsg ? "errorAlert" : "offscreen"}

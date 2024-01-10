@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Data from "./Data/ModelData";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 const Exterior = () => {
-  const heightRef = useRef();
+ 
   const [exterior] = useState(Data);
   const [activeColor, setActiveColor] = useState(0);
   const [activeExterior, setActiveExterior] = useState(0);

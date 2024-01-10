@@ -1,10 +1,9 @@
 import { FaUserCircle } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../Global Conext/AuthenticationContext";
 import "./Navbar.css";
 
 const AccDropDown = () => {
-  const { user, userData, SignOutUser } = useAuthContext();
+  const { user,  SignOutUser } = useAuthContext();
 
   // const navigate = useNavigate();
 

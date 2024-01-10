@@ -4,11 +4,7 @@ import React, { useContext, useState, useEffect } from "react";
 //   db,
 //   onAuthStateChanged,
 // } from "../Pages/UserAuthentication/Firebase";
-import {
-  auth,
-  db,
-  onAuthStateChanged,
-} from "../Firebase"
+import { auth, db, onAuthStateChanged } from "../Firebase";
 import {
   collection,
   addDoc,
@@ -32,7 +28,7 @@ import { useGlobalContext } from "./GlobalContext";
 const AuthContext = React.createContext();
 
 export const AuthProvider = ({ children }) => {
-  const{showAside, setShowAside}=useGlobalContext()
+  const { showAside, setShowAside } = useGlobalContext();
 
   const collectionUserRef = collection(db, "user");
 
@@ -156,6 +152,8 @@ export const AuthProvider = ({ children }) => {
         signUpHandleSubmit,
         SignOutUser,
         user,
+        loading,
+        setLoading,
         setUser,
         userData,
       }}

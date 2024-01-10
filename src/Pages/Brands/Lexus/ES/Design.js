@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // Design
 import strikingstyle from "../../../../Images/LEXUS/ES/lexus-2024-es-300h-ultra-luxury-iridium-fr0-l.png";
 import legroom from "../../../../Images/LEXUS/ES/Interior/Lexus-ES-classleading-legroom-design-desktop-1440x800-LEX-ESH-MY22-0009.png";

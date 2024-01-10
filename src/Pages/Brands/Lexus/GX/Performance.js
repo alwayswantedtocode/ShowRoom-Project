@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import SpecAside from "./Aside/SpecAside";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import firstImage from "../../../../Images/LEXUS/GX/Lexus-GX-SuspensionSystemDesktop-Preformance.jpg";

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // Design
 import dramaticstyling from "../../../../Images/LEXUS/IS/Lexus-IS-dramatic-styling-design-desktop-1440x800-LEX-ISF-MY23-0041.png";
 import cockpit from "../../../../Images/LEXUS/IS/INTERIOR/2021_Lexus_IS_F-SPORT_028.png";

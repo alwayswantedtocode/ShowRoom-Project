@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, } from "react";
 import gallerydata from "./Data/GalleryData";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
