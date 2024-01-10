@@ -124,6 +124,9 @@ p {
   h4 {
     line-height: 1;
   }
+  a{
+
+  }
 }
 
 /*
@@ -301,10 +304,14 @@ header {
   display: none;
 }
 
-.navLinkContainer navLink {
+ NavLink {
   text-decoration: none;
   color: #000000;
   margin: 0;
+}
+
+NavLink:visited{
+ color: #000000; 
 }
 .navLinkContainer a:visited {
   color: #000000;
