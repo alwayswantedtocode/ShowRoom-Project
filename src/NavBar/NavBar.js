@@ -1,4 +1,4 @@
-import React, { useState, useEffect, } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../NavBar/Logo";
 
@@ -7,7 +7,7 @@ import { useAuthContext } from "../Global Conext/AuthenticationContext";
 import SubMenu from "./SubMenu";
 import "./Navbar.css";
 import { FaBars, FaUserCircle } from "react-icons/fa";
-
+import AccDropDown from "./AccDropDown";
 
 const NavBar = () => {
   const {
@@ -47,6 +47,7 @@ const NavBar = () => {
     openSubMenu(brand);
   };
 
+  // Account details drop down functions
   //Account functions
   const handleAccountIcon = () => {
     const clickOnIcon = showAside;
@@ -70,7 +71,19 @@ const NavBar = () => {
     setShowAside(!showAside);
   };
 
+  // Click in anywhere to remove Account dropdown//
+  const handleAccount = (event) => {
+    if (!AccountRef.current.contains(event.target)) {
+      setShowAside(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleAccount);
 
+    return () => {
+      document.removeEventListener("mousedown", handleAccount);
+    };
+  }, []);
 
   return (
     <header>
@@ -81,7 +94,7 @@ const NavBar = () => {
       >
         <div className="NavContainer">
           <button className="toggle-Menubar" onClick={openMobileMenu}>
-            <FaBars/>
+            <FaBars />
           </button>
           <div className="navLogo">
             <NavLink to="/">
@@ -102,26 +115,6 @@ const NavBar = () => {
               </NavLink>
             </div>
 
-            <div className="account-container">
-              {userId ? (
-                <div
-                  className="User-Icon"
-                  id="user-icon"
-                  onClick={handleAccountIcon}
-                  ref={AccountRef}
-                >
-                  {/* <img src="" alt="" /> */}
-                  <FaUserCircle />
-                </div>
-              ) : (
-                <button className="signIn-btn">
-                  <NavLink to="/SignIn" className="navLink mouseover">
-                    Sign in
-                  </NavLink>
-                </button>
-              )}
-            </div>
-
             {/* <button className="search-btn">
               <NavLink className="navLink mouseover">
                 <FaSearch />
@@ -129,6 +122,33 @@ const NavBar = () => {
             </button> */}
           </div>
         </div>
+        <div className="account-container" ref={AccountRef}>
+          {userId ? (
+            <div
+              className="User-Icon"
+              id="user-icon"
+              onClick={handleAccountIcon}
+            >
+              {/* <img src="" alt="" /> */}
+              <FaUserCircle />
+            </div>
+          ) : (
+            <button className="signIn-btn">
+              <NavLink to="/SignIn" className="navLink mouseover">
+                Sign in
+              </NavLink>
+            </button>
+          )}
+        </div>
+
+        <aside
+          className={showAside ? "dropdownaside active" : "dropdownaside"}
+          id="dropdown"
+          ref={AccountRef}
+        >
+          <AccDropDown />
+        </aside>
+
         {/* Dropdown brand menu */}
         <aside
           className={

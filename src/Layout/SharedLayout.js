@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <div style={{position:"relative"}}>
         <Navbar />
-        <Account/>
+        {/* <Account/> */}
         <SlideMenu />
         <Outlet />
         <Footer />
