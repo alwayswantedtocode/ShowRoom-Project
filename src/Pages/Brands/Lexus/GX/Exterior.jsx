@@ -60,7 +60,7 @@ const Exterior = () => {
         }}
       >
         {exterior.map((slide, index) => {
-          const { id, Color } = slide;
+          const {Color } = slide;
           return (
             <div
               className={`Exterior-Color-slide-container ${

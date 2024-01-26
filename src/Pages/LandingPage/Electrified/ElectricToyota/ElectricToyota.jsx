@@ -5,7 +5,7 @@ import './ElectricToyota.css';
 import useSliderBtn from '../../../../Custom Hooks/useSliderBtn';
 
 const ElectricToyota = () => {
-	const { index, nextHandle, prevHandle, handleSlideCounter } = useSliderBtn(data);
+	const { index, nextHandle, prevHandle, handleSlideCounter, gestureSlider } = useSliderBtn(data);
 
 	// Access the image slide DOM
 	const toyotaSlideRef = useRef();
@@ -19,32 +19,7 @@ const ElectricToyota = () => {
 		// Go green image slider
 
 		<div className="T-Green-container">
-			<div
-				className="T-Green-slide-container"
-				onTouchStart={(e) => {
-					const touch = e.touches[0];
-					let xStart = touch.clientX;
-					let yStart = touch.clientY;
-
-					e.target.addEventListener('touchmove', (e) => {
-						const touchMove = e.touches[0];
-						let xDiff = touchMove.clientX - xStart;
-						let yDiff = touchMove.clientY - yStart;
-
-						if (Math.abs(xDiff) > Math.abs(yDiff)) {
-							if (xDiff > 0) {
-								prevHandle();
-							} else {
-								nextHandle();
-							}
-						}
-					});
-
-					e.target.addEventListener('touchend', () => {
-						e.target.removeEventListener('touchmove', null);
-					});
-				}}
-			>
+			<div className="T-Green-slide-container" onTouchStart={gestureSlider}>
 				{data.map((toyota, Index) => {
 					const { image, name, id } = toyota;
 					return (

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import Data from "./Data/ModelData";
+import data from "./Data/ModelData";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
+
 const Exterior = () => {
- 
-  const [exterior] = useState(Data);
+
+  // const [exterior] = useState(Data);
   const [activeColor, setActiveColor] = useState(0);
   const [activeExterior, setActiveExterior] = useState(0);
-  // const [exteriormenu, setExteriorMenu] = useState([0, 1]);
 
-  const nestedArray = exterior[0].Color;
+  const nestedArray = data[0].Color;
 
   // let exteriorColorHeight = heightRef.current?.clientHeight;
 
@@ -59,8 +59,8 @@ const Exterior = () => {
           });
         }}
       >
-        {exterior.map((slide, index) => {
-          const { id, Color } = slide;
+        {data.map((slide, index) => {
+          const {Color } = slide;
           return (
             <div
               className={`Exterior-Color-slide-container ${
@@ -102,23 +102,23 @@ const Exterior = () => {
             </div>
           );
         })}
-        {exterior.map((btn, index) => {
+        {data.map((btn, index) => {
           return (
-            <div className="Nav-btn" key={index}>
-              <button className="Btn-Direction" onClick={Slideleft}>
-                <FaChevronLeft />
-              </button>
-              <button className="Btn-Direction" onClick={SlideRight}>
-                <FaChevronRight />
-              </button>
-            </div>
-          );
+				<div className="Nav-btn" key={index}>
+					<button className="Btn-Direction" onClick={Slideleft}>
+						<FaChevronLeft />
+					</button>
+					<button className="Btn-Direction" onClick={SlideRight}>
+						<FaChevronRight />
+					</button>
+				</div>
+			);
         })}
       </div>
       <div className="exterior-menu">
         <div className="menu-btn-container">
           {" "}
-          {exterior.map((menu, index) => {
+          {data.map((menu, index) => {
             return (
               <button
                 className={`Menu-Btn-color ${
@@ -131,7 +131,7 @@ const Exterior = () => {
           })}
         </div>
         <div className="Menu-Name-Container">
-          {exterior.map((Slidename, index) => {
+          {data.map((Slidename, index) => {
             const { Title } = Slidename;
             return (
               <span

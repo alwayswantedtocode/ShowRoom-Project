@@ -31,7 +31,7 @@ const Footer = () => {
             );
           })}
         </div>
-        <hr />
+        <hr style={{margin:"auto"}} />
 
         <div className="tail-details">
           <div className="Footer-logo-Cont">

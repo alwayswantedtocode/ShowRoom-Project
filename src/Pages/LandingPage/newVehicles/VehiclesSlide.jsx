@@ -21,29 +21,6 @@ const VehiclesSlide = () => {
 				style={{
 					transform: 'translateX(-' + vehicleSlidewidth * index + 'px',
 				}}
-				// onTouchStart={(e) => {
-				// 	const touch = e.touches[0];
-				// 	let xStart = touch.clientX;
-				// 	let yStart = touch.clientY;
-
-				// 	e.target.addEventListener('touchmove', (e) => {
-				// 		const touchMove = e.touches[0];
-				// 		let xDiff = touchMove.clientX - xStart;
-				// 		let yDiff = touchMove.clientY - yStart;
-
-				// 		if (Math.abs(xDiff) > Math.abs(yDiff)) {
-				// 			if (xDiff > 0) {
-				// 				prevHandle();
-				// 			} else {
-				// 				nextHandle();
-				// 			}
-				// 		}
-				// 	});
-
-				// 	e.target.addEventListener('touchend', () => {
-				// 		e.target.removeEventListener('touchmove', null);
-				// 	});
-				// }}
 				onTouchStart={gestureSlider}
 			>
 				{data.map((carslides, carIndex) => {

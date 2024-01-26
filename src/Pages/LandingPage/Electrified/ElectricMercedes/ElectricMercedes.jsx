@@ -5,7 +5,7 @@ import './ElectricMercedes.css';
 import useSliderBtn from '../../../../Custom Hooks/useSliderBtn';
 
 const ElectricMercedes = () => {
-	const { index, nextHandle, prevHandle, handleSlideCounter } = useSliderBtn(data);
+	const { index, nextHandle, prevHandle, handleSlideCounter, gestureSlider } = useSliderBtn(data);
 
 	// Access the image slide DOM
 	const mercedesSlideRef = useRef();
@@ -18,32 +18,7 @@ const ElectricMercedes = () => {
 	return (
 		// Go green image slider
 		<div className="M-Green-container">
-			<div
-				className="M-Green-slide-container"
-				onTouchStart={(e) => {
-					const touch = e.touches[0];
-					let xStart = touch.clientX;
-					let yStart = touch.clientY;
-
-					e.target.addEventListener('touchmove', (e) => {
-						const touchMove = e.touches[0];
-						let xDiff = touchMove.clientX - xStart;
-						let yDiff = touchMove.clientY - yStart;
-
-						if (Math.abs(xDiff) > Math.abs(yDiff)) {
-							if (xDiff > 0) {
-								prevHandle();
-							} else {
-								nextHandle();
-							}
-						}
-					});
-
-					e.target.addEventListener('touchend', () => {
-						e.target.removeEventListener('touchmove', null);
-					});
-				}}
-			>
+			<div className="M-Green-slide-container" onTouchStart={gestureSlider}>
 				{data.map((mercedes, Index) => {
 					const { image, name, id } = mercedes;
 					return (
@@ -70,10 +45,10 @@ const ElectricMercedes = () => {
 			{/* Buttons */}
 			<div className="M-Green-btn-container">
 				<button className="M-left-click" onClick={prevHandle}>
-					<BiChevronLeftCircle />
+					<BiChevronLeftCircle style={{ color: 'black' }} />
 				</button>
 				<button className="M-right-click" onClick={nextHandle}>
-					<BiChevronRightCircle />
+					<BiChevronRightCircle style={{ color: 'black' }} />
 				</button>
 			</div>
 
