@@ -136,7 +136,7 @@ p {
 /* margin-top: auto; */
 }
 .footer {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   left: 0px;
   background: #000000;

@@ -142,7 +142,7 @@ button Styles
   z-index: 1;
 }
 
-.video-container video {
+.video-container > video {
   background-position: center;
   background-size: cover;
   z-index: 1;
